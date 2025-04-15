@@ -1,0 +1,54 @@
+# Archivos y directorios de desarrollo
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+.DS_Store
+
+# Archivos y directorios de compilación
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]uild[Ll]og.*
+
+# Archivos generados por NuGet y paquetes
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+
+# Archivos de test
+TestResults/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Archivos específicos de Docker
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Archivos de Git
+.git/
+.gitignore
+.gitattributes
+
+# Directorios de nodos
+**/node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Para evitar problemas de permisos específicos de Windows en Docker
+SuperBodega/**/obj/
+SuperBodega/**/bin/

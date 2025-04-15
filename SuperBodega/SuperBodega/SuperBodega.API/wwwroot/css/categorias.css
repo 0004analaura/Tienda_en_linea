@@ -1,0 +1,58 @@
+.categoria-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.categoria-card .card-header {
+  background: var(--primary);
+  color: white;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-count {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+#categoriasTable th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+#categoriasTable tbody tr {
+  transition: all 0.2s ease;
+}
+
+#categoriasTable tbody tr:hover {
+  background-color: rgba(33, 33, 33, 0.04);
+}
+
+.categoria-badge {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.categoria-badge.active {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.categoria-badge.inactive {
+  background-color: rgba(158, 158, 158, 0.15);
+  color: #616;
+}

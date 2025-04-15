@@ -1,0 +1,67 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: superbodega-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DATABASE_PASSWORD_ONE}
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: [ "CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${DATABASE_PASSWORD_ONE} -Q 'SELECT 1' || exit 1" ]
+      interval: 10s
+      retries: 10
+      start_period: 20s
+      timeout: 3s
+    networks:
+      - superbodega-network
+    restart: always
+
+  api:
+    build:
+      context: ./SuperBodega
+      dockerfile: SuperBodega.API/Dockerfile
+    container_name: superbodega-api
+    environment:
+      - DOTNET_RUNNING_IN_CONTAINER=true
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DB_CONNECTION_STRING=Server=sqlserver;Database=${DATABASE_NAME_ONE};User Id=sa;Password=${DATABASE_PASSWORD_ONE};TrustServerCertificate=True;
+      - SA_PASSWORD=${DATABASE_PASSWORD_ONE}
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+    ports:
+      - "8080:8080"
+    volumes:
+      - type: bind
+        source: ./SuperBodega/SuperBodega.API/wwwroot
+        target: /app/wwwroot
+        read_only: true
+      - type: bind
+        source: ./SuperBodega/SuperBodega.API/Views
+        target: /app/Views
+        read_only: true
+      - producto-images:/app/wwwroot/images/productos
+    depends_on:
+      sqlserver:
+        condition: service_started
+    networks:
+      - superbodega-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  producto-images:
+  sqlserver_data:
+    
+
+networks:
+  superbodega-network:
+    driver: bridge
