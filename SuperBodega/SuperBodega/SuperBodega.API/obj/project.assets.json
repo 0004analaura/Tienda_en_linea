@@ -4459,23 +4459,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aoliv\\.nuget\\packages\\": {},
+    "C:\\Users\\CELESTE ORE\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aoliv\\Downloads\\SuperBodega (2)\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
+      "projectUniqueName": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
       "projectName": "SuperBodega.API",
-      "projectPath": "C:\\Users\\aoliv\\Downloads\\SuperBodega (2)\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
-      "packagesPath": "C:\\Users\\aoliv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aoliv\\Downloads\\SuperBodega (2)\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\",
+      "projectPath": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
+      "packagesPath": "C:\\Users\\CELESTE ORE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aoliv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CELESTE ORE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4550,7 +4550,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

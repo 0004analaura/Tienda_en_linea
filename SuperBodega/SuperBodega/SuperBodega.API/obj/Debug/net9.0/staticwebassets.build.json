@@ -1,0 +1,3865 @@
+{
+  "Version": 1,
+  "Hash": "SwEu72M9WXLADyIVh8ABQ05ENvnagO9DympgqDWyT0s=",
+  "Source": "SuperBodega.API",
+  "BasePath": "_content/SuperBodega.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SuperBodega.API\\wwwroot",
+      "Source": "SuperBodega.API",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0ns201ytmh-p6es6te7pg.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/shared#[.{fingerprint=p6es6te7pg}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ig852dcqdy",
+      "Integrity": "EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0wha195292-jnotgecgp5.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/home#[.{fingerprint=jnotgecgp5}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "drk69u08qr",
+      "Integrity": "mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\9zs0q739yp-xaita7nk4w.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/proveedores#[.{fingerprint=xaita7nk4w}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y6ekkz3h2d",
+      "Integrity": "Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\eqy3nw5g2z-9nc5hhmnv7.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/productos#[.{fingerprint=9nc5hhmnv7}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tp8qzz9mfb",
+      "Integrity": "X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\jg9u6o92ot-7le0y4hcxb.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/dashboard#[.{fingerprint=7le0y4hcxb}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dnaa092ii1",
+      "Integrity": "l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\l55agvcq7p-kn64a2wysp.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/home#[.{fingerprint=kn64a2wysp}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2e4585am89",
+      "Integrity": "hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\or58am0zk9-gl25xktxws.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/productos#[.{fingerprint=gl25xktxws}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vamzl0bixj",
+      "Integrity": "WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\porgcfl3ib-4pgxpwc7gd.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/categorias#[.{fingerprint=4pgxpwc7gd}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i5ril0n0la",
+      "Integrity": "CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\qk0x4edl7b-bt04f3t0sb.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/clientes#[.{fingerprint=bt04f3t0sb}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "f7yauzcd9g",
+      "Integrity": "Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\rt1fflgzyz-vtjol0jpzh.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/dashboard#[.{fingerprint=vtjol0jpzh}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fhet1bwefn",
+      "Integrity": "beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\zx6oyd1wxz-siyqpqoqlz.gz",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/categorias#[.{fingerprint=siyqpqoqlz}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "9xd13l2edd",
+      "Integrity": "vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/categorias#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4pgxpwc7gd",
+      "Integrity": "yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\categorias.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7le0y4hcxb",
+      "Integrity": "JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/home#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jnotgecgp5",
+      "Integrity": "8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/productos#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gl25xktxws",
+      "Integrity": "ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\productos.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "css/shared#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6es6te7pg",
+      "Integrity": "0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\shared.css"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "images/productos/default_product#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ptobrja1p",
+      "Integrity": "pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\productos\\default_product.png"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/categorias#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "siyqpqoqlz",
+      "Integrity": "RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\categorias.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/clientes#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bt04f3t0sb",
+      "Integrity": "4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\clientes.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vtjol0jpzh",
+      "Integrity": "Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/home#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kn64a2wysp",
+      "Integrity": "UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/productos#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9nc5hhmnv7",
+      "Integrity": "u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\productos.js"
+    },
+    {
+      "Identity": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "SourceId": "SuperBodega.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\",
+      "BasePath": "_content/SuperBodega.API",
+      "RelativePath": "js/proveedores#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xaita7nk4w",
+      "Integrity": "F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\proveedores.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/categorias.4pgxpwc7gd.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\porgcfl3ib-4pgxpwc7gd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002369668246"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4pgxpwc7gd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/categorias.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris="
+        }
+      ]
+    },
+    {
+      "Route": "css/categorias.4pgxpwc7gd.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4pgxpwc7gd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/categorias.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris="
+        }
+      ]
+    },
+    {
+      "Route": "css/categorias.4pgxpwc7gd.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\porgcfl3ib-4pgxpwc7gd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4pgxpwc7gd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/categorias.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/categorias.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\porgcfl3ib-4pgxpwc7gd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002369668246"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris="
+        }
+      ]
+    },
+    {
+      "Route": "css/categorias.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I+pBBnjGris="
+        }
+      ]
+    },
+    {
+      "Route": "css/categorias.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\porgcfl3ib-4pgxpwc7gd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "421"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CgEh1dwU/pnM4XKOeqEKyckvfQIlLBoPgSPOGuTKxuQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.7le0y4hcxb.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\jg9u6o92ot-7le0y4hcxb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000947867299"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1054"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7le0y4hcxb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.7le0y4hcxb.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7le0y4hcxb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.7le0y4hcxb.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\jg9u6o92ot-7le0y4hcxb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1054"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7le0y4hcxb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\jg9u6o92ot-7le0y4hcxb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000947867299"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1054"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbTlXDnr4CCEodgXjQq8FbY02+A9MEC9g0K/ZZKNbx8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\jg9u6o92ot-7le0y4hcxb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1054"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l0fE9iquh1fmPOJUGrXZAV8KMv0uyb4qi0fLMPUxkWg="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0wha195292-jnotgecgp5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001680672269"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0wha195292-jnotgecgp5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.jnotgecgp5.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0wha195292-jnotgecgp5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001680672269"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jnotgecgp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.jnotgecgp5.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jnotgecgp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.jnotgecgp5.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0wha195292-jnotgecgp5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jnotgecgp5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mY+ikbP4mqxkGDIFo8hvOv0Kad5xtlxUEQ5I601ldj8="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\or58am0zk9-gl25xktxws.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001792114695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "557"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\or58am0zk9-gl25xktxws.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.gl25xktxws.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\or58am0zk9-gl25xktxws.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001792114695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "557"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gl25xktxws"
+        },
+        {
+          "Name": "label",
+          "Value": "css/productos.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.gl25xktxws.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gl25xktxws"
+        },
+        {
+          "Name": "label",
+          "Value": "css/productos.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="
+        }
+      ]
+    },
+    {
+      "Route": "css/productos.gl25xktxws.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\or58am0zk9-gl25xktxws.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gl25xktxws"
+        },
+        {
+          "Name": "label",
+          "Value": "css/productos.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WT+pRIRprfeXqUZ1YlCoXistIhWzNgHVJH7qsnzUBls="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0ns201ytmh-p6es6te7pg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001079913607"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "925"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0ns201ytmh-p6es6te7pg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "925"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.p6es6te7pg.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0ns201ytmh-p6es6te7pg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001079913607"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "925"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6es6te7pg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/shared.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.p6es6te7pg.css",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6es6te7pg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/shared.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="
+        }
+      ]
+    },
+    {
+      "Route": "css/shared.p6es6te7pg.css.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\0ns201ytmh-p6es6te7pg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "925"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6es6te7pg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/shared.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EpD9w+c+gQ0U471R9ylhKNvjKkalHp6/NbCrSVuKsok="
+        }
+      ]
+    },
+    {
+      "Route": "images/productos/default_product.8ptobrja1p.png",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ptobrja1p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/productos/default_product.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw="
+        }
+      ]
+    },
+    {
+      "Route": "images/productos/default_product.png",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\zx6oyd1wxz-siyqpqoqlz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000272553829"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3668"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\zx6oyd1wxz-siyqpqoqlz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.siyqpqoqlz.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\zx6oyd1wxz-siyqpqoqlz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000272553829"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3668"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "siyqpqoqlz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/categorias.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.siyqpqoqlz.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "siyqpqoqlz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/categorias.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="
+        }
+      ]
+    },
+    {
+      "Route": "js/categorias.siyqpqoqlz.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\zx6oyd1wxz-siyqpqoqlz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "siyqpqoqlz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/categorias.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfODv+m5EFwKvp2C8ssDGAE9LdEm8GjDoysGcpBkWoo="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.bt04f3t0sb.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\qk0x4edl7b-bt04f3t0sb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000236574403"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4226"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bt04f3t0sb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clientes.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.bt04f3t0sb.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bt04f3t0sb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clientes.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.bt04f3t0sb.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\qk0x4edl7b-bt04f3t0sb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bt04f3t0sb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clientes.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\qk0x4edl7b-bt04f3t0sb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000236574403"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4226"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ffvDkT6Y2SArJ8+HjDhzdvRdV9yCR5OS7cR5+1QK5I="
+        }
+      ]
+    },
+    {
+      "Route": "js/clientes.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\qk0x4edl7b-bt04f3t0sb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Veq7EDsWP/q30jdNThxAiqlFNa0BhtqjSEymT/zb5oE="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\rt1fflgzyz-vtjol0jpzh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001834862385"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\rt1fflgzyz-vtjol0jpzh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.vtjol0jpzh.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\rt1fflgzyz-vtjol0jpzh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001834862385"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vtjol0jpzh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.vtjol0jpzh.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vtjol0jpzh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+F37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.vtjol0jpzh.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\rt1fflgzyz-vtjol0jpzh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vtjol0jpzh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-beTXAg6ARm/5z0n5fd3TE4kGx2VPtJw5QYUrVJzTnho="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\l55agvcq7p-kn64a2wysp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006944444444"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\l55agvcq7p-kn64a2wysp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.kn64a2wysp.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\l55agvcq7p-kn64a2wysp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006944444444"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kn64a2wysp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.kn64a2wysp.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kn64a2wysp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.kn64a2wysp.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\l55agvcq7p-kn64a2wysp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kn64a2wysp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hv6NEdAuwLKwgvM359SEnql/tTOiBymUVhRKK4U7AHI="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.9nc5hhmnv7.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\eqy3nw5g2z-9nc5hhmnv7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000154106950"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6488"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9nc5hhmnv7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/productos.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.9nc5hhmnv7.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9nc5hhmnv7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/productos.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.9nc5hhmnv7.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\eqy3nw5g2z-9nc5hhmnv7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9nc5hhmnv7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/productos.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\eqy3nw5g2z-9nc5hhmnv7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000154106950"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6488"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs+byCFha7xAUI="
+        }
+      ]
+    },
+    {
+      "Route": "js/productos.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\eqy3nw5g2z-9nc5hhmnv7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X9LrMKLb2VrfqoVqzVqdd5stwn6F6/4Pb2fbteQrtMc="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\9zs0q739yp-xaita7nk4w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000234521576"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4263"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\9zs0q739yp-xaita7nk4w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.xaita7nk4w.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\9zs0q739yp-xaita7nk4w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000234521576"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4263"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xaita7nk4w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/proveedores.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.xaita7nk4w.js",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xaita7nk4w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/proveedores.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK+0aQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/proveedores.xaita7nk4w.js.gz",
+      "AssetFile": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\Debug\\net9.0\\compressed\\9zs0q739yp-xaita7nk4w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 21:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xaita7nk4w"
+        },
+        {
+          "Name": "label",
+          "Value": "js/proveedores.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jgs3GBk1sO6vWD1ktRgbJlGyskBecY9ngddjsJhztYk="
+        }
+      ]
+    }
+  ]
+}

@@ -3,8 +3,9 @@
     "",
     "\\SuperBodega",
     "\\SuperBodega\\SuperBodega",
-    "\\SuperBodega\\SuperBodega\\SuperBodega.API"
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\bin"
   ],
-  "SelectedNode": "\\SuperBodega\\SuperBodega",
+  "SelectedNode": "\\SuperBodega\\SuperBodega\\SuperBodega.API",
   "PreviewInSolutionExplorer": false
 }
