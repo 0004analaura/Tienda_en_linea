@@ -1,0 +1,31 @@
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\css\shared.css
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\css\home.css
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\productos-listado.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\clientes-productos.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\proveedores.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\compras-productos.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\productos.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\css\dashboard.css
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\home.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\productos-filtrar.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\css\productos.css
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\css\categorias.css
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\clientes.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\dashboard.js
+C:\Users\pitap\Downloads\Catalogo Productos\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\wwwroot\js\categorias.js
+wwwroot\css\categorias.css
+wwwroot\css\dashboard.css
+wwwroot\css\home.css
+wwwroot\css\productos.css
+wwwroot\css\shared.css
+wwwroot\images\productos\default_product.png
+wwwroot\js\categorias.js
+wwwroot\js\clientes.js
+wwwroot\js\clientes-productos.js
+wwwroot\js\compras-productos.js
+wwwroot\js\dashboard.js
+wwwroot\js\home.js
+wwwroot\js\productos.js
+wwwroot\js\productos-filtrar.js
+wwwroot\js\productos-listado.js
+wwwroot\js\proveedores.js

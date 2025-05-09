@@ -1,0 +1,196 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/categorias.4pgxpwc7gd.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\categorias.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4pgxpwc7gd"},{"Name":"integrity","Value":"sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I\u002BpBBnjGris="},{"Name":"label","Value":"_content/SuperBodega.API/css/categorias.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1085"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I\u002BpBBnjGris=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/categorias.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\categorias.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I\u002BpBBnjGris="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1085"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yIv54mrrKEYRnLmrMsFmlHzO8WSr7h29I\u002BpBBnjGris=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/dashboard.7le0y4hcxb.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7le0y4hcxb"},{"Name":"integrity","Value":"sha256-JbTlXDnr4CCEodgXjQq8FbY02\u002BA9MEC9g0K/ZZKNbx8="},{"Name":"label","Value":"_content/SuperBodega.API/css/dashboard.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3476"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JbTlXDnr4CCEodgXjQq8FbY02\u002BA9MEC9g0K/ZZKNbx8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/dashboard.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JbTlXDnr4CCEodgXjQq8FbY02\u002BA9MEC9g0K/ZZKNbx8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3476"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JbTlXDnr4CCEodgXjQq8FbY02\u002BA9MEC9g0K/ZZKNbx8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/home.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\home.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1844"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/home.jnotgecgp5.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\home.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jnotgecgp5"},{"Name":"integrity","Value":"sha256-8RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y="},{"Name":"label","Value":"_content/SuperBodega.API/css/home.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1844"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228RXW3zwOU6yOctbm6mZFynHoeNQlHS9JOj0p4cVyh8Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/productos.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\productos.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1502"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/productos.gl25xktxws.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\productos.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gl25xktxws"},{"Name":"integrity","Value":"sha256-ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc="},{"Name":"label","Value":"_content/SuperBodega.API/css/productos.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1502"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZD3xdK7qpfApXUmkSiElF5zmTnsaPOoGuW5GlLJKFSc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/shared.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\shared.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3030"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/css/shared.p6es6te7pg.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\shared.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p6es6te7pg"},{"Name":"integrity","Value":"sha256-0TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4="},{"Name":"label","Value":"_content/SuperBodega.API/css/shared.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3030"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220TBS1Q87J71oFwH1jimZcHBq3/0my0i5rkvqH7qekX4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/images/productos/default_product.8ptobrja1p.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\productos\default_product.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8ptobrja1p"},{"Name":"integrity","Value":"sha256-pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw="},{"Name":"label","Value":"_content/SuperBodega.API/images/productos/default_product.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38273"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/images/productos/default_product.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\productos\default_product.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"38273"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022pGyj25avcw7l2ZfvNCzhM6mLKRrgqHMsAqvujKbBjKw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/categorias.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\categorias.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18002"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/categorias.siyqpqoqlz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\categorias.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"siyqpqoqlz"},{"Name":"integrity","Value":"sha256-RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc="},{"Name":"label","Value":"_content/SuperBodega.API/js/categorias.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18002"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RJLl6cWkiIENDMRaRHIbrNyoDE8rxUswwUBCnlwUSoc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/clientes-productos.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\clientes-productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zrhigEULnYIc7QT7ydTB0fZEMS7ZbrfmPn2wsznng7k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1120"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zrhigEULnYIc7QT7ydTB0fZEMS7ZbrfmPn2wsznng7k=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 21:00:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/clientes-productos.uswru7ow24.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\clientes-productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uswru7ow24"},{"Name":"integrity","Value":"sha256-zrhigEULnYIc7QT7ydTB0fZEMS7ZbrfmPn2wsznng7k="},{"Name":"label","Value":"_content/SuperBodega.API/js/clientes-productos.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1120"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zrhigEULnYIc7QT7ydTB0fZEMS7ZbrfmPn2wsznng7k=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 21:00:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/clientes.bt04f3t0sb.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\clientes.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bt04f3t0sb"},{"Name":"integrity","Value":"sha256-4ffvDkT6Y2SArJ8\u002BHjDhzdvRdV9yCR5OS7cR5\u002B1QK5I="},{"Name":"label","Value":"_content/SuperBodega.API/js/clientes.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24892"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00224ffvDkT6Y2SArJ8\u002BHjDhzdvRdV9yCR5OS7cR5\u002B1QK5I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/clientes.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\clientes.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4ffvDkT6Y2SArJ8\u002BHjDhzdvRdV9yCR5OS7cR5\u002B1QK5I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24892"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00224ffvDkT6Y2SArJ8\u002BHjDhzdvRdV9yCR5OS7cR5\u002B1QK5I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/compras-productos.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\compras-productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iMJziEXUlrBJRGCZeyhfO563cYnnBmStbuVjNbKe0JQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"23405"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022iMJziEXUlrBJRGCZeyhfO563cYnnBmStbuVjNbKe0JQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/compras-productos.sbmydss9ir.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\compras-productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sbmydss9ir"},{"Name":"integrity","Value":"sha256-iMJziEXUlrBJRGCZeyhfO563cYnnBmStbuVjNbKe0JQ="},{"Name":"label","Value":"_content/SuperBodega.API/js/compras-productos.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"23405"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022iMJziEXUlrBJRGCZeyhfO563cYnnBmStbuVjNbKe0JQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/dashboard.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Yx\u002BF37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1228"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Yx\u002BF37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/dashboard.vtjol0jpzh.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vtjol0jpzh"},{"Name":"integrity","Value":"sha256-Yx\u002BF37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc="},{"Name":"label","Value":"_content/SuperBodega.API/js/dashboard.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1228"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Yx\u002BF37pZuBZCaFq7LmIKSV4eMTW0Cd3kttwnK6IP4zc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/home.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\home.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"147"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/home.kn64a2wysp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\home.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kn64a2wysp"},{"Name":"integrity","Value":"sha256-UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY="},{"Name":"label","Value":"_content/SuperBodega.API/js/home.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"147"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022UPOwlrGBFBjjpqn66AB9IDHnoh6BAmukXDe9w9W3vGY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos-filtrar.4w7kyj3zj7.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos-filtrar.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4w7kyj3zj7"},{"Name":"integrity","Value":"sha256-9OIOFVrrQRI8dy5KMHQy\u002BXNVQsWb/5gCfsMbaXZy4DQ="},{"Name":"label","Value":"_content/SuperBodega.API/js/productos-filtrar.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00229OIOFVrrQRI8dy5KMHQy\u002BXNVQsWb/5gCfsMbaXZy4DQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 20:40:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos-filtrar.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos-filtrar.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9OIOFVrrQRI8dy5KMHQy\u002BXNVQsWb/5gCfsMbaXZy4DQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00229OIOFVrrQRI8dy5KMHQy\u002BXNVQsWb/5gCfsMbaXZy4DQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 20:40:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos-listado.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos-listado.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6JY9jjcW6OZWFb3MwiNnCCzkqtValSDCpY\u002B8WTlppjg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2172"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226JY9jjcW6OZWFb3MwiNnCCzkqtValSDCpY\u002B8WTlppjg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 20:35:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos-listado.sf79ld0iic.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos-listado.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sf79ld0iic"},{"Name":"integrity","Value":"sha256-6JY9jjcW6OZWFb3MwiNnCCzkqtValSDCpY\u002B8WTlppjg="},{"Name":"label","Value":"_content/SuperBodega.API/js/productos-listado.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2172"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226JY9jjcW6OZWFb3MwiNnCCzkqtValSDCpY\u002B8WTlppjg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 20:35:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos.9nc5hhmnv7.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9nc5hhmnv7"},{"Name":"integrity","Value":"sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs\u002BbyCFha7xAUI="},{"Name":"label","Value":"_content/SuperBodega.API/js/productos.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33403"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs\u002BbyCFha7xAUI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/productos.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\productos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs\u002BbyCFha7xAUI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"33403"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022u3v1vFlRSlDvNq2GnoNC3RY1tthIlTs\u002BbyCFha7xAUI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/proveedores.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\proveedores.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK\u002B0aQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"23128"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK\u002B0aQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SuperBodega.API/js/proveedores.xaita7nk4w.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\proveedores.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xaita7nk4w"},{"Name":"integrity","Value":"sha256-F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK\u002B0aQ="},{"Name":"label","Value":"_content/SuperBodega.API/js/proveedores.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"23128"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022F8i0XykAEziPuSdprcT5EGl16eYKefgpY396npK\u002B0aQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 12:35:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

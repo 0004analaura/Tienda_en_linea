@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Filtrar Productos por Categoría";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Filtrar Productos por Categoría</h1>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="card-title mb-0"><i class="bi bi-tags me-2"></i>Seleccione una Categoría</h5>
+        </div>
+        <div class="card-body">
+            <div class="mb-4">
+                <label for="categoriaSelect" class="form-label">Categoría</label>
+                <select id="categoriaSelect" class="form-select">
+                    <option value="">Seleccione una categoría</option>
+                    <!-- Las categorías se cargarán dinámicamente -->
+                </select>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover" id="tablaProductosFiltrados" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Stock</th>
+                            <th>Precio Venta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productosFiltradosTableBody">
+                        <!-- Los datos se cargarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/productos-filtrar.js"></script>
+}
