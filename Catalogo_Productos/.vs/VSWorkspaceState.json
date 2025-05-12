@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Tienda_en_linea",
+    "\\Tienda_en_linea\\SuperBodega",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Controllers",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Controllers\\Admin",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css",
+    "\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\Tienda_en_linea\\SuperBodega\\SuperBodega",
+  "PreviewInSolutionExplorer": false
+}
