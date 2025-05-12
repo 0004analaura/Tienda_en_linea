@@ -1,0 +1,138 @@
+@model SuperBodega.API.DTOs.Admin.CompraProductoDTO
+@{
+    ViewData["Title"] = "Editar Producto de Compra";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Editar Producto de Compra</h1>
+    </div>
+
+    <div id="alertContainer" class="mb-4" style="display: none;"></div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-pencil-square me-2 fs-4"></i>
+                <h5 class="card-title mb-0">Editar Información del Producto</h5>
+            </div>
+        </div>
+        <div class="card-body p-4">
+            <form asp-action="Edit" method="post" id="formEditarCompraProducto">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="CompraId" />
+
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <label asp-for="ProveedorId" class="form-label fw-bold">Proveedor <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person-lines-fill"></i></span>
+                            <select asp-for="ProveedorId" class="form-select" asp-items="ViewBag.Proveedores" disabled>
+                            </select>
+                        </div>
+                        <span asp-validation-for="ProveedorId" class="text-danger"></span>
+                        <small class="text-muted">El proveedor no se puede cambiar</small>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                        <label asp-for="ProductoId" class="form-label fw-bold">Producto <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-box-seam"></i></span>
+                            <select asp-for="ProductoId" class="form-select" asp-items="ViewBag.Productos" disabled>
+                            </select>
+                        </div>
+                        <span asp-validation-for="ProductoId" class="text-danger"></span>
+                        <small class="text-muted">El producto no se puede cambiar</small>
+                    </div>
+
+                    <div id="detallesProducto" class="col-12 mb-4">
+                        <div class="alert alert-info">
+                            <p class="mb-1 fw-bold">Información del producto seleccionado</p>
+                            <p class="text-muted mb-0 small">La información del producto no se puede modificar una vez añadido a la compra. Para cambiar el producto, elimine esta entrada y agregue un nuevo producto.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="Cantidad" class="form-label fw-bold">Cantidad <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-123"></i></span>
+                            <input asp-for="Cantidad" type="number" class="form-control" min="1" required id="cantidadInput" />
+                        </div>
+                        <span asp-validation-for="Cantidad" class="text-danger"></span>
+                        <small class="text-muted">Cantidad de unidades compradas</small>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <label asp-for="PrecioUnitario" class="form-label fw-bold">Precio de Compra Unitario <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+                            <input asp-for="PrecioUnitario" type="number" step="0.01" class="form-control" min="0.01" required id="precioCompraInput" />
+                        </div>
+                        <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                        <small class="text-muted">Precio de compra por unidad</small>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <label class="form-label fw-bold">Precio de Venta Unitario <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-tag"></i></span>
+                            <input asp-for="PrecioVenta" type="number" step="0.01" class="form-control" min="0.01" required id="precioVentaInput" name="PrecioVenta" />
+                        </div>
+                        <small class="text-muted">Precio de venta por unidad</small>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <label class="form-label fw-bold">Total de Compra</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-cash-stack"></i></span>
+                            <input type="text" id="totalCompraInput" class="form-control" readonly value="@((Model.Cantidad * Model.PrecioUnitario).ToString("F2"))" />
+                        </div>
+                        <small class="text-muted">Total calculado (Cantidad × Precio de Compra)</small>
+                    </div>
+
+                    <div class="col-md-12 mb-4">
+                        <label class="form-label fw-bold">Fecha de Registro</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                            <input type="hidden" asp-for="FechaDeCompra">
+                            <input type="text" class="form-control" id="fechaDeCompraVisible" readonly>
+                        </div>
+                        <small class="text-muted mt-2"><i class="bi bi-info-circle me-1"></i>La fecha de registro no se puede modificar.</small>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="@Url.Action("Index", "CompraProductoView")" class="btn btn-outline-secondary me-md-2">
+                        <i class="bi bi-x-circle me-1"></i>Cancelar
+                    </a>
+                    <button type="button" id="btnUpdateCompra" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-1"></i>Actualizar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/compras-productos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            inicializarVistaEdicion();
+
+            // Initialize date field
+            const fechaCompraInput = document.querySelector('input[name="FechaDeCompra"]');
+            const fechaCompraVisibleInput = document.getElementById('fechaDeCompraVisible');
+
+            if (fechaCompraInput && fechaCompraVisibleInput) {
+                fechaCompraVisibleInput.value = formatearFechaAmPm(fechaCompraInput.value);
+            }
+        });
+    </script>
+}

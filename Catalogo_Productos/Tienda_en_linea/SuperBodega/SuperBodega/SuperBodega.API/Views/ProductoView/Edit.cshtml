@@ -1,0 +1,163 @@
+﻿@model SuperBodega.API.DTOs.Admin.UpdateProductoDTO
+@{
+    ViewData["Title"] = "Editar Producto";
+    Layout = "_Layout";
+    var categorias = ViewBag.Categorias as List<SelectListItem> ?? new List<SelectListItem>();
+    var producto = ViewBag.Producto as SuperBodega.API.DTOs.Admin.ProductoDTO;
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Editar Producto</h1>
+    </div>
+
+    <div id="alertContainer" class="mb-4" style="display: none;"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-pencil-square me-2 fs-4"></i>
+                        <h5 class="card-title mb-0">Editar Información: @producto?.Nombre</h5>
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data" id="formEditarProducto">
+                        <input type="hidden" name="Id" value="@ViewBag.ProductoId" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="row">
+                                <div class="mb-4">
+                                    <label asp-for="Codigo" class="form-label fw-bold">Código <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-upc"></i></span>
+                                        <input asp-for="Codigo" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="Codigo" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="Nombre" class="form-label fw-bold">Nombre <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                                        <input asp-for="Nombre" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="CategoriaId" class="form-label fw-bold">Categoría <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-tags"></i></span>
+                                        <select asp-for="CategoriaId" class="form-select" asp-items="categorias">
+                                            <option value="">-- Seleccionar Categoría --</option>
+                                        </select>
+                                    </div>
+                                    <span asp-validation-for="CategoriaId" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Stock Actual</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-boxes"></i></span>
+                                        <input id="Stock" class="form-control" type="number" value="@producto?.Stock" disabled readonly />
+                                    </div>
+                                    <small class="text-muted mt-2"><i class="bi bi-info-circle me-1"></i>Para modificar el stock, use el módulo de movimientos de inventario.</small>
+                                </div>
+                                <div class="mb-4">
+                                    <label asp-for="PrecioDeCompra" class="form-label fw-bold">Precio de Compra <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">Q</span>
+                                        <input asp-for="PrecioDeCompra" class="form-control" type="number" step="0.01" min="0" />
+                                    </div>
+                                    <span asp-validation-for="PrecioDeCompra" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label asp-for="PrecioDeVenta" class="form-label fw-bold">Precio de Venta <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">Q</span>
+                                        <input asp-for="PrecioDeVenta" class="form-control" type="number" step="0.01" min="0" />
+                                    </div>
+                                    <span asp-validation-for="PrecioDeVenta" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Estado</label>
+                                    <div class="card p-3 border">
+                                        <div class="form-check form-switch">
+                                            <input asp-for="Estado" class="form-check-input" type="checkbox" />
+                                            <label asp-for="Estado" class="form-check-label">Activo</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Imagen del Producto</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                        <input type="file" class="form-control" id="imagen" name="Imagen" accept="image/*" />
+                                    </div>
+                                    @if (!string.IsNullOrEmpty(producto?.ImagenUrl))
+                                    {
+                                        <div class="card p-2 mb-2">
+                                            <div class="d-flex align-items-center">
+                                                <img src="@producto.ImagenUrl" class="img-thumbnail me-3" style="max-height: 100px;" alt="@producto.Nombre" data-fecha-registro="@producto.FechaDeRegistro.ToString("o")" />
+                                                <div>
+                                                    <p class="mb-1">Imagen actual</p>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="mantenerImagen" name="MantenerImagen" checked>
+                                                        <label class="form-check-label" for="mantenerImagen">
+                                                            Mantener imagen actual
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="mb-4">
+                                    <label asp-for="Descripcion" class="form-label fw-bold">Descripción</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-card-text"></i></span>
+                                        <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="fechaDeRegistro" class="form-label fw-bold">Fecha de Registro</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                        <input type="hidden" id="fechaDeRegistro" name="fechaDeRegistro" value="@producto?.FechaDeRegistro.ToString("o")">
+                                        <input type="text" class="form-control" id="fechaDeRegistroVisible" readonly>
+                                    </div>
+                                    <small class="text-muted mt-2"><i class="bi bi-info-circle me-1"></i>La fecha de registro no se puede modificar.</small>
+                                </div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("Index", "ProductoView")" class="btn btn-outline-secondary me-md-2">
+                                <i class="bi bi-x-circle me-1"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-circle me-1"></i>Actualizar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/productos.js"></script>
+}

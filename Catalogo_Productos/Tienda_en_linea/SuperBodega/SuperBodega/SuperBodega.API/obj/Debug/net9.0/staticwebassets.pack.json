@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "PackagePath": "staticwebassets\\css\\categorias.css"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "PackagePath": "staticwebassets\\css\\productos.css"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "PackagePath": "staticwebassets\\css\\shared.css"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
+      "PackagePath": "staticwebassets\\images\\productos\\default_product.png"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "PackagePath": "staticwebassets\\js\\categorias.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes-productos.js",
+      "PackagePath": "staticwebassets\\js\\clientes-productos.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "PackagePath": "staticwebassets\\js\\clientes.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\compras-productos.js",
+      "PackagePath": "staticwebassets\\js\\compras-productos.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos-filtrar.js",
+      "PackagePath": "staticwebassets\\js\\productos-filtrar.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos-listado.js",
+      "PackagePath": "staticwebassets\\js\\productos-listado.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "PackagePath": "staticwebassets\\js\\productos.js"
+    },
+    {
+      "Id": "C:\\Users\\pitap\\Downloads\\Catalogo Productos\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "PackagePath": "staticwebassets\\js\\proveedores.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SuperBodega.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SuperBodega.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.SuperBodega.API.props",
+      "PackagePath": "build\\SuperBodega.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.SuperBodega.API.props",
+      "PackagePath": "buildMultiTargeting\\SuperBodega.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.SuperBodega.API.props",
+      "PackagePath": "buildTransitive\\SuperBodega.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

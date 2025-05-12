@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Todos los Productos";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_ClientMenu" />
+}
+
+<div class="container mt-4">
+    <h3 class="mb-3">Todos los Productos</h3>
+    <div id="lista-productos" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Productos se insertarán aquí dinámicamente -->
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/productos-listado.js"></script>
+}

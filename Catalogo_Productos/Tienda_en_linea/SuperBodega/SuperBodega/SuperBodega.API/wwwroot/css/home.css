@@ -1,0 +1,97 @@
+.main-container {
+  padding: 0;
+  background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: var(--primary) !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: var(--secondary) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #212121 0%, #424242 100%);
+  color: white;
+  padding: 80px 0;
+  border-radius: 15px;
+  margin: 40px 0;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.connection-status {
+  margin: 30px 0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-light {
+  background-color: white;
+  color: var(--primary);
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}

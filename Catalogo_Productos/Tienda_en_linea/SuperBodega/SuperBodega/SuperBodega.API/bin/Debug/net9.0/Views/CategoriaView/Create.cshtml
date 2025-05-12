@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Nueva Categoría";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Nueva Categoría</h1>
+    </div>
+    
+    <div id="alertContainer" class="mb-4" style="display: none;"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-tags me-2 fs-4"></i>
+                        <h5 class="card-title mb-0">Información de la Categoría</h5>
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <form id="createCategoriaForm">
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <label for="nombre" class="form-label fw-bold">Nombre <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-tag"></i></span>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre de la categoría">
+                                </div>
+                                <div class="invalid-feedback">El nombre es obligatorio.</div>
+                            </div>
+                            
+                            <div class="col-md-12 mb-4">
+                                <label for="descripcion" class="form-label fw-bold">Descripción</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-card-text"></i></span>
+                                    <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Describa la categoría"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-bold">Estado</label>
+                                <div class="card p-3 border">
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" id="estado" name="estado">
+                                        <label class="form-check-label" for="estado">Activo</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <label for="fechaDeRegistro" class="form-label fw-bold">Fecha de Registro</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                    <input type="datetime-local" class="form-control" id="fechaDeRegistro" name="fechaDeRegistro">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("Index", "CategoriaView")" class="btn btn-outline-secondary me-md-2">
+                                <i class="bi bi-x-circle me-1"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save me-1"></i>Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/categorias.js"></script>
+}

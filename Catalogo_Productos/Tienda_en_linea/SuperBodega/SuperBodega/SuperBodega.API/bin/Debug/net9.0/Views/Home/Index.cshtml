@@ -1,0 +1,97 @@
+@{
+    Layout = null;
+    ViewData["Title"] = "SuperBodega - Página Principal";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    <link rel="stylesheet" href="~/css/shared.css" />
+</head>
+<body>
+    <div class="container-fluid main-container">
+        <div class="container">
+            <div class="hero-section" id="welcomeSection">
+                <div class="container">
+                    <h1 class="display-4 mb-4">Bienvenido a SuperBodega</h1>
+                    <p class="lead mb-4">Tu sistema completo para gestión de inventario y ventas</p>
+                    <hr class="my-4">
+                    <div class="row mt-5">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-5">
+                                    <i class="bi bi-cart-fill text-primary mb-4" style="font-size: 3rem;"></i>
+                                    <h3 class="card-title mb-3">Área de Cliente</h3>
+                                    <p class="card-text text-muted mb-4">Explora nuestro catálogo, gestiona tu carrito y realiza compras.</p>
+                                    <a href="/Dashboard/ClienteDashboard" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-arrow-right-circle me-2"></i>Acceder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center p-5">
+                                    <i class="bi bi-gear-fill text-secondary mb-4" style="font-size: 3rem;"></i>
+                                    <h3 class="card-title mb-3">Administración</h3>
+                                    <p class="card-text text-muted mb-4">Gestiona productos, clientes, proveedores y ventas del sistema.</p>
+                                    <a href="/Dashboard/AdminDashboard" class="btn btn-secondary btn-lg">
+                                        <i class="bi bi-arrow-right-circle me-2"></i>Acceder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-box-seam text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="text-center mb-3">Gestión de Productos</h4>
+                            <p class="text-muted">Administra tu inventario, categorías y precios de manera eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-people text-success" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="text-center mb-3">Gestión de Clientes</h4>
+                            <p class="text-muted">Organiza y gestiona tu base de clientes de forma sencilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-graph-up text-warning" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4 class="text-center mb-3">Seguimiento de Ventas</h4>
+                            <p class="text-muted">Controla y analiza tus ventas con reportes actualizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/home.js"></script>
+</body>
+</html>
