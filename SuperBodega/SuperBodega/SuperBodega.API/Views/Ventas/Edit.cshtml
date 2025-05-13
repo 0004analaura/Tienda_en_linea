@@ -1,0 +1,48 @@
+@model SuperBodega.API.Models.Admin.Venta
+@{
+    ViewData["Title"] = "Editar Venta";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Editar Venta #@Model.Id</h1>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group mb-3">
+                    <label asp-for="Fecha" class="form-label">Fecha</label>
+                    <input asp-for="Fecha" class="form-control" type="date" />
+                    <span asp-validation-for="Fecha" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="ClienteId" class="form-label">Cliente</label>
+                    <select asp-for="ClienteId" asp-items="ViewBag.Clientes" class="form-select">
+                        <option value="">-- Seleccione cliente --</option>
+                    </select>
+                    <span asp-validation-for="ClienteId" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Estado" class="form-label">Estado</label>
+                    <select asp-for="Estado" class="form-select">
+                        @foreach (var e in Enum.GetValues(typeof(SuperBodega.API.Models.Admin.EstadoVenta)))
+                        {
+                        <option value="@e" selected="@(e.Equals(Model.Estado))">@e</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+                <!-- Total recalculado en el servidor -->
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>

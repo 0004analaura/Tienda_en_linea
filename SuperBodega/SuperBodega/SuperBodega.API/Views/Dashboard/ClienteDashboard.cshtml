@@ -4,32 +4,7 @@
 }
 
 @section Menu {
-    <li>
-        <a href="#"><i class="bi bi-grid me-2"></i>Catálogo</a>
-    </li>
-    <li class="submenu">
-        <a href="#catalogoSubmenu"><i class="bi bi-box me-2"></i>Productos</a>
-        <ul class="list-unstyled submenu-items" id="catalogoSubmenu">
-            <li>
-                <a href="#"><i class="bi bi-list me-2"></i>Todos los Productos</a>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-filter me-2"></i>Filtrar por Categoría</a>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a href="#"><i class="bi bi-cart me-2"></i>Carrito de Compras</a>
-    </li>
-    <li>
-        <a href="#"><i class="bi bi-bag-check me-2"></i>Realizar Compra</a>
-    </li>
-    <li>
-        <a href="#"><i class="bi bi-clock-history me-2"></i>Mis Pedidos</a>
-    </li>
-    <li>
-        <a href="#"><i class="bi bi-bell me-2"></i>Notificaciones</a>
-    </li>
+    <partial name="_ClientMenu" />
 }
 
 <div class="container-fluid">
@@ -37,3 +12,12 @@
         <h1 class="h3 mb-0">Panel de Cliente</h1>
     </div>
 </div>
+
+<div class="container mt-4">
+    <h3 class="mb-3">Todos los Productos</h3>
+    <div id="lista-productos" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Productos se insertarán aquí dinámicamente -->
+    </div>
+</div>
+
+<script src="/js/clientes-productos.js"></script>

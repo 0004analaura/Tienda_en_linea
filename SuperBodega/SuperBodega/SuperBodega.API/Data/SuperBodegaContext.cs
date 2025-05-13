@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using SuperBodega.API.Models;
 using SuperBodega.API.Models.Admin;
+using SuperBodega.API.DTOs.Admin;
 
 namespace SuperBodega.API.Data
 {
@@ -15,6 +16,9 @@ namespace SuperBodega.API.Data
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<CompraProducto> CompraProductos { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<VentaProducto> VentaProductos { get; set; }
 
         public SuperBodegaContext(DbContextOptions<SuperBodegaContext> options) : base(options)
         {
@@ -43,19 +47,20 @@ namespace SuperBodega.API.Data
                                     Console.WriteLine("Tablas creadas en la base de datos.");
                                 }
                             }
-                            
-                            // Marcar como inicializada después de la creación exitosa
-                            _databaseInitialized = true;
-                            Console.WriteLine("Base de datos inicializada correctamente.");
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error al inicializar base de datos: {ex.Message}");
-                            // No marcamos como inicializada para que se intente nuevamente en el próximo reinicio
+                            // Log the exception
+                            Console.WriteLine($"Error al inicializar la base de datos: {ex.Message}");
+                        }
+                        finally
+                        {
+                            _databaseInitialized = true;
                         }
                     }
                 }
             }
         }
+        public DbSet<SuperBodega.API.DTOs.Admin.ProductoDTO> ProductoDTO { get; set; } = default!;
     }
 }

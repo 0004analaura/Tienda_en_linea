@@ -1,93 +1,141 @@
 is_global = true
 build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SuperBodega.API
 build_property.RootNamespace = SuperBodega.API
-build_property.ProjectDir = C:\Users\CELESTE ORE\Documents\Semestre 5\Programacion III\PROYECTO\Tienda_en_linea1\SuperBodega\SuperBodega\SuperBodega.API\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.ProjectDir = C:\Users\jmora\OneDrive\Escritorio\Proyecto\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API\
+build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\CELESTE ORE\Documents\Semestre 5\Programacion III\PROYECTO\Tienda_en_linea1\SuperBodega\SuperBodega\SuperBodega.API
+build_property.MSBuildProjectDirectory = C:\Users\jmora\OneDrive\Escritorio\Proyecto\Tienda_en_linea\SuperBodega\SuperBodega\SuperBodega.API
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 9.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Create.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhVmlld1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Edit.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhVmlld1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Index.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CategoriaView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhVmlld1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Create.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVZpZXdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Edit.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVZpZXdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Index.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ClienteView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVZpZXdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/Dashboard/AdminDashboard.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CompraProductoView/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhUHJvZHVjdG9WaWV3XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CompraProductoView/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhUHJvZHVjdG9WaWV3XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/CompraProductoView/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhUHJvZHVjdG9WaWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Dashboard/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/Dashboard/ClienteDashboard.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Dashboard/ClienteDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXENsaWVudGVEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/Home/Index.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ecommerce/Productos/FiltrarPorCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWNvbW1lcmNlXFByb2R1Y3Rvc1xGaWx0cmFyUG9yQ2F0ZWdvcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ecommerce/Productos/Productos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWNvbW1lcmNlXFByb2R1Y3Rvc1xQcm9kdWN0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Create.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9WaWV3XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Edit.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9WaWV3XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Index.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProductoView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9WaWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Create.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yVmlld1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Edit.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yVmlld1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Index.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/ProveedorView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yVmlld1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_Layout.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_ClientMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DbGllbnRNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_Menu.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/CELESTE ORE/Documents/Semestre 5/Programacion III/PROYECTO/Tienda_en_linea1/SuperBodega/SuperBodega/SuperBodega.API/Views/_ViewImports.cshtml]
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ventas/ChangeState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENoYW5nZVN0YXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ventas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ventas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jmora/OneDrive/Escritorio/Proyecto/Tienda_en_linea/SuperBodega/SuperBodega/SuperBodega.API/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -4,8 +4,13 @@
     "\\SuperBodega",
     "\\SuperBodega\\SuperBodega",
     "\\SuperBodega\\SuperBodega\\SuperBodega.API",
-    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\bin"
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\Controllers",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\Data",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\DTOs",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\Properties",
+    "\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services"
   ],
-  "SelectedNode": "\\SuperBodega\\SuperBodega\\SuperBodega.API",
+  "SelectedNode": "\\SuperBodega\\SuperBodega\\SuperBodega.API\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

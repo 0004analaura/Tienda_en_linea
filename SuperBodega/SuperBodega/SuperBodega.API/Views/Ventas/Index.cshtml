@@ -1,0 +1,56 @@
+@model IEnumerable<SuperBodega.API.Models.Admin.Venta>
+    @{
+    ViewData["Title"] = "Listado de Ventas";
+    Layout = "_Layout";
+    }
+
+    @section Menu {
+        <partial name="_Menu" />
+    }
+
+    <div class="container-fluid">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0">Gestión de Ventas</h1>
+            <a asp-action="Create" class="btn btn-primary">Nueva Venta</a>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="ventasTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Fecha</th>
+                                <th>Cliente</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var venta in Model)
+                        {
+                            <tr>
+                                <td>@venta.Id</td>
+                                <td>@venta.Fecha.ToString("yyyy-MM-dd")</td>
+                                <td>@venta.Cliente?.Nombre</td>
+                                <td>@venta.Total.ToString("C")</td>
+                                <td>@venta.Estado</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@venta.Id" class="btn btn-sm btn-warning">Editar</a>
+                                    <form asp-action="Delete" asp-route-id="@venta.Id" method="post" style="display:inline">
+                                        <button type="submit" class="btn btn-sm btn-danger"
+                                                onclick="return confirm('¿Eliminar esta venta?');">
+                                            Eliminar
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -15,7 +15,7 @@ namespace SuperBodega.API.Services
         private static readonly object _lockObject = new object();
 
         public DatabaseInitializerService(
-            IServiceScopeFactory scopeFactory, 
+            IServiceScopeFactory scopeFactory,
             ILogger<DatabaseInitializerService> logger,
             IConfiguration configuration)
         {
@@ -51,11 +51,11 @@ namespace SuperBodega.API.Services
                     var dbContext = scope.ServiceProvider.GetRequiredService<SuperBodegaContext>();
                     var connectionString = dbContext.Database.GetConnectionString();
                     _logger.LogInformation($"Usando connection string: {connectionString}");
-                    
+
                     // 1. Verificar si la base de datos existe, si no, crearla
                     _logger.LogInformation("Verificando si la base de datos existe...");
                     bool exists = await dbContext.Database.CanConnectAsync();
-                    
+
                     if (!exists)
                     {
                         _logger.LogInformation("La base de datos no existe, creándola...");

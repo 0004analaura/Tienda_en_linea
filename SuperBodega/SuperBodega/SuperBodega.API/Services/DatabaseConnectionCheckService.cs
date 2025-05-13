@@ -26,7 +26,7 @@ namespace SuperBodega.API.Services
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation("Servicio de verificación de base de datos iniciado");
-            
+
             while (!stoppingToken.IsCancellationRequested && !_connectionSuccessful && _connectionAttempt < _maxAttempts)
             {
                 _connectionAttempt++;
@@ -35,19 +35,19 @@ namespace SuperBodega.API.Services
                     using (var scope = _scopeFactory.CreateScope())
                     {
                         var dbContext = scope.ServiceProvider.GetRequiredService<SuperBodegaContext>();
-                        
-                        _logger.LogInformation("Intento {Attempt}/{MaxAttempts} de conexión a SQL Server", 
+
+                        _logger.LogInformation("Intento {Attempt}/{MaxAttempts} de conexión a SQL Server",
                             _connectionAttempt, _maxAttempts);
-                        
+
                         // Intenta conectar a la base de datos
                         bool canConnect = await dbContext.Database.CanConnectAsync(stoppingToken);
-                        
+
                         if (canConnect)
                         {
                             _connectionSuccessful = true;
-                            _logger.LogInformation("¡CONEXIÓN EXITOSA! SQL Server está en línea después de {Attempt} intentos", 
+                            _logger.LogInformation("¡CONEXIÓN EXITOSA! SQL Server está en línea después de {Attempt} intentos",
                                 _connectionAttempt);
-                            
+
                             // Solo verificar si la base de datos existe una vez
                             if (!_databaseVerified)
                             {
@@ -60,19 +60,19 @@ namespace SuperBodega.API.Services
                                     }
                                 }
                             }
-                            
+
                             break;
                         }
                         else
                         {
-                            _logger.LogWarning("Intento fallido de conexión a SQL Server ({Attempt}/{MaxAttempts})", 
+                            _logger.LogWarning("Intento fallido de conexión a SQL Server ({Attempt}/{MaxAttempts})",
                                 _connectionAttempt, _maxAttempts);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "Error al intentar conectar a SQL Server (Intento {Attempt}/{MaxAttempts}): {Message}", 
+                    _logger.LogError(ex, "Error al intentar conectar a SQL Server (Intento {Attempt}/{MaxAttempts}): {Message}",
                         _connectionAttempt, _maxAttempts, ex.Message);
                 }
 
@@ -82,10 +82,10 @@ namespace SuperBodega.API.Services
 
             if (!_connectionSuccessful && _connectionAttempt >= _maxAttempts)
             {
-                _logger.LogError("SE AGOTARON LOS INTENTOS. No se pudo conectar a SQL Server después de {MaxAttempts} intentos", 
+                _logger.LogError("SE AGOTARON LOS INTENTOS. No se pudo conectar a SQL Server después de {MaxAttempts} intentos",
                     _maxAttempts);
             }
-            
+
             // Continuar verificando la conexión periódicamente SIN recrear tablas
             while (!stoppingToken.IsCancellationRequested)
             {
@@ -95,10 +95,10 @@ namespace SuperBodega.API.Services
                     {
                         var dbContext = scope.ServiceProvider.GetRequiredService<SuperBodegaContext>();
                         bool isConnected = await dbContext.Database.CanConnectAsync(stoppingToken);
-                        
-                        _logger.LogInformation("Estado de la conexión a SQL Server: {Status}", 
+
+                        _logger.LogInformation("Estado de la conexión a SQL Server: {Status}",
                             isConnected ? "CONECTADO" : "DESCONECTADO");
-                            
+
                         if (isConnected != _connectionSuccessful)
                         {
                             if (isConnected)

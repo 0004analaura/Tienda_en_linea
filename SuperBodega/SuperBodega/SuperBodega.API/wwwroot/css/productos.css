@@ -82,3 +82,28 @@
   right: 10px;
   z-index: 10;
 }
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.card-img-top {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+    .btn-warning:hover {
+        background-color: #ec971f;
+        border-color: #d58512;
+    }
