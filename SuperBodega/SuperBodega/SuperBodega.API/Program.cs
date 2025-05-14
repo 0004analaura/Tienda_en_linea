@@ -10,6 +10,7 @@ using Microsoft.Extensions.FileProviders;
 using SuperBodega.API.Repositories.Implementations.Admin;
 using SuperBodega.API.Repositories.Interfaces.Admin;
 using SuperBodega.API.Services.Admin;
+using SuperBodega.API.Services.Ecommerce;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -95,6 +96,7 @@ builder.Services.AddScoped<ClienteService>();
 
 builder.Services.AddScoped<CompraProductoService>();
 builder.Services.AddScoped<VentaService>();
+builder.Services.AddScoped<CarritoService>();
 
 
 

@@ -11,7 +11,7 @@ namespace SuperBodega.API.Models.Admin
         public DateTime Fecha { get; set; }
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
-        public decimal Total { get; set; }
+        public decimal? Total { get; set; }
         public EstadoVenta Estado { get; set; }
 
         public List<VentaProducto> Productos { get; set; } = new();

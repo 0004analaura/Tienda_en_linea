@@ -8218,23 +8218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pitap\\.nuget\\packages\\": {},
+    "C:\\Users\\lucia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
+      "projectUniqueName": "C:\\Users\\lucia\\Desktop\\ProyectoTienda\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
       "projectName": "SuperBodega.API",
-      "projectPath": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
-      "packagesPath": "C:\\Users\\pitap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\",
+      "projectPath": "C:\\Users\\lucia\\Desktop\\ProyectoTienda\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
+      "packagesPath": "C:\\Users\\lucia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucia\\Desktop\\ProyectoTienda\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pitap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8321,7 +8321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -8330,7 +8330,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "SuperBodega.API depende de Swashbuckle.AspNetCore (>= 6.5.1), pero no se encontró Swashbuckle.AspNetCore 6.5.1. Swashbuckle.AspNetCore 6.6.1 se resolvió en su lugar.",
+      "message": "SuperBodega.API depends on Swashbuckle.AspNetCore (>= 6.5.1) but Swashbuckle.AspNetCore 6.5.1 was not found. Swashbuckle.AspNetCore 6.6.1 was resolved instead.",
       "libraryId": "Swashbuckle.AspNetCore",
       "targetGraphs": [
         "net9.0"

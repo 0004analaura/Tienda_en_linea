@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using SuperBodega.API.Models;
 using SuperBodega.API.Models.Admin;
 using SuperBodega.API.DTOs.Admin;
+using SuperBodega.API.Models.Ecommerce;
 
 namespace SuperBodega.API.Data
 {
@@ -19,6 +20,7 @@ namespace SuperBodega.API.Data
         public DbSet<CompraProducto> CompraProductos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<VentaProducto> VentaProductos { get; set; }
+        public DbSet<Carrito> Carritos { get; set; }
 
         public SuperBodegaContext(DbContextOptions<SuperBodegaContext> options) : base(options)
         {

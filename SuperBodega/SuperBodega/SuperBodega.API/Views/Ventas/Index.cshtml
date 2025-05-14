@@ -10,7 +10,7 @@
 
     <div class="container-fluid">
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0">Gestión de Ventas</h1>
+            <h1 class="h3 mb-0">Gestiï¿½n de Ventas</h1>
             <a asp-action="Create" class="btn btn-primary">Nueva Venta</a>
         </div>
 
@@ -35,13 +35,13 @@
                                 <td>@venta.Id</td>
                                 <td>@venta.Fecha.ToString("yyyy-MM-dd")</td>
                                 <td>@venta.Cliente?.Nombre</td>
-                                <td>@venta.Total.ToString("C")</td>
+                                <td>@string.Format("{0:C}", venta.Total)</td>
                                 <td>@venta.Estado</td>
                                 <td>
                                     <a asp-action="Edit" asp-route-id="@venta.Id" class="btn btn-sm btn-warning">Editar</a>
                                     <form asp-action="Delete" asp-route-id="@venta.Id" method="post" style="display:inline">
                                         <button type="submit" class="btn btn-sm btn-danger"
-                                                onclick="return confirm('¿Eliminar esta venta?');">
+                                                onclick="return confirm('ï¿½Eliminar esta venta?');">
                                             Eliminar
                                         </button>
                                     </form>
