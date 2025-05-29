@@ -9,10 +9,12 @@ namespace SuperBodega.API.Services.Ecommerce;
 public class CarritoService
 {
     private readonly SuperBodegaContext _context;
+    private readonly ILogger<CarritoService> _logger;
 
-    public CarritoService(SuperBodegaContext context)
+    public CarritoService(SuperBodegaContext context, ILogger<CarritoService> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
     public async Task<List<CarritoDTO>> GetAllCarritosAsync()
@@ -166,9 +168,6 @@ public class CarritoService
 
     public async Task<CarritoDTO> GetCarritoAsync()
     {
-        // Este método se usará cuando no sabemos qué cliente está logueado
-        // Para la implementación actual, vamos a devolver un carrito vacío
-        // En una app real, esto vendría del servicio de autenticación
         return new CarritoDTO
         {
             Items = new List<CarritoItemDTO>(),
@@ -190,19 +189,22 @@ public class CarritoService
         }
     }
 
-    public async Task<bool> RealizarCompraAsync(int clienteId)
+    public async Task<int> RealizarCompraAsync(int clienteId)
     {
-        // Use CreateExecutionStrategy to create a strategy that can safely retry the transaction
+        _logger.LogInformation("Iniciando proceso de compra para cliente {ClienteId}", clienteId);
+
+        // Usar la estrategia de ejecución de Entity Framework para manejar reintentos
         var strategy = _context.Database.CreateExecutionStrategy();
         
         return await strategy.ExecuteAsync(async () =>
         {
-            // Start transaction inside the execution strategy
             using var transaction = await _context.Database.BeginTransactionAsync();
             
             try
             {
-                // Obtener el carrito del cliente
+                _logger.LogInformation("Buscando carrito para cliente {ClienteId}", clienteId);
+
+                // 1. Obtener carrito con items y productos (con include para evitar lazy loading)
                 var carrito = await _context.Carritos
                     .Include(c => c.Cliente)
                     .Include(c => c.Items)
@@ -211,62 +213,109 @@ public class CarritoService
 
                 if (carrito == null || !carrito.Items.Any())
                 {
-                    throw new Exception("El carrito está vacío o no existe");
+                    _logger.LogWarning("Carrito vacío o inexistente para cliente {ClienteId}", clienteId);
+                    throw new InvalidOperationException("El carrito está vacío o no existe");
                 }
 
-                // Verificar stock disponible
+                _logger.LogInformation("Carrito encontrado con {ItemCount} items", carrito.Items.Count);
+
+                // 2. Validar stock de todos los productos antes de crear la venta
+                var erroresStock = new List<string>();
                 foreach (var item in carrito.Items)
                 {
-                    if (item.Cantidad > item.Producto.Stock)
+                    if (item.Producto == null)
                     {
-                        throw new Exception($"No hay suficiente stock para el producto {item.Producto.Nombre}");
+                        erroresStock.Add($"Producto con ID {item.ProductoId} no encontrado");
+                        continue;
+                    }
+                    
+                    if (item.Producto.Stock < item.Cantidad)
+                    {
+                        erroresStock.Add($"Stock insuficiente para {item.Producto.Nombre}. Disponible: {item.Producto.Stock}, Requerido: {item.Cantidad}");
                     }
                 }
 
-                // Crear una nueva venta
+                if (erroresStock.Any())
+                {
+                    _logger.LogWarning("Errores de stock: {Errores}", string.Join(", ", erroresStock));
+                    throw new InvalidOperationException($"Errores de stock: {string.Join(", ", erroresStock)}");
+                }
+
+                _logger.LogInformation("Validación de stock completada");
+
+                // 3. Crear la venta
                 var venta = new Venta
                 {
                     ClienteId = clienteId,
                     Fecha = DateTime.Now,
-                    Total = carrito.Total ?? 0,
-                    Estado = EstadoVenta.Completada
+                    Estado = EstadoVenta.Recibido,
+                    Total = 0 // Se calculará después
                 };
 
                 _context.Ventas.Add(venta);
                 await _context.SaveChangesAsync();
 
-                // Agregar productos a la venta y actualizar stock
+                _logger.LogInformation("Venta {VentaId} creada", venta.Id);
+
+                // 4. Procesar cada item del carrito
+                decimal? totalVenta = 0;
+                var ventaProductos = new List<VentaProducto>();
+
                 foreach (var item in carrito.Items)
                 {
+                    // Crear producto de venta
                     var ventaProducto = new VentaProducto
                     {
                         VentaId = venta.Id,
                         ProductoId = item.ProductoId,
                         Cantidad = item.Cantidad,
-                        PrecioUnitario = item.PrecioUnitario
+                        PrecioUnitario = item.PrecioUnitario ?? item.Producto.PrecioDeVenta
                     };
 
-                    _context.VentaProductos.Add(ventaProducto);
+                    ventaProductos.Add(ventaProducto);
+                    totalVenta += (ventaProducto.PrecioUnitario * ventaProducto.Cantidad);
 
-                    // Actualizar el stock del producto
+                    // Actualizar stock
                     item.Producto.Stock -= item.Cantidad;
-                    _context.Update(item.Producto);
+                    _context.Productos.Update(item.Producto);
+
+                    _logger.LogInformation("Procesado item: {ProductoNombre} x{Cantidad} = Q{Subtotal}", 
+                        item.Producto.Nombre, item.Cantidad, ventaProducto.PrecioUnitario * ventaProducto.Cantidad);
                 }
 
-                // Guardar cambios de productos de venta y actualización de stock
-                await _context.SaveChangesAsync();
+                // 5. Agregar todos los productos de venta
+                _context.VentaProductos.AddRange(ventaProductos);
 
-                // Vaciar el carrito
+                // 6. Actualizar total de la venta
+                venta.Total = totalVenta;
+                _context.Ventas.Update(venta);
+
+                _logger.LogInformation("Total de venta: Q{Total}", totalVenta);
+
+                // 7. Vaciar el carrito
                 _context.RemoveRange(carrito.Items);
-                await _context.SaveChangesAsync();
+                _context.Carritos.Remove(carrito);
 
+                _logger.LogInformation("Carrito vaciado para cliente {ClienteId}", clienteId);
+
+                // 8. Guardar todos los cambios
+                await _context.SaveChangesAsync();
+                
+                // 9. Confirmar la transacción
                 await transaction.CommitAsync();
-                return true;
+
+                _logger.LogInformation("Compra completada exitosamente. Venta ID: {VentaId}, Total: Q{Total}", 
+                    venta.Id, venta.Total);
+
+                return venta.Id;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Error durante la compra para cliente {ClienteId}", clienteId);
+                
+                // Si algo falla, hacer rollback
                 await transaction.RollbackAsync();
-                throw;
+                throw; // Re-lanzar la excepción para que la estrategia pueda reintentar si es apropiado
             }
         });
     }

@@ -5,7 +5,10 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Ecommerce;
 
-[Route("Dashboard")]
+/// <summary>
+/// Controlador para gestionar las vistas de productos en el sistema ecommerce
+/// </summary>
+[Route("Cliente")]
 public class EcommerceProductosViewController : Controller
 {
     private readonly ProductoService _productoService;

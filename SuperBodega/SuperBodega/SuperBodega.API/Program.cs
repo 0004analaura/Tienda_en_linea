@@ -11,17 +11,21 @@ using SuperBodega.API.Repositories.Implementations.Admin;
 using SuperBodega.API.Repositories.Interfaces.Admin;
 using SuperBodega.API.Services.Admin;
 using SuperBodega.API.Services.Ecommerce;
-
+using Microsoft.AspNetCore.Mvc;
+using SuperBodega.API.Infrastructure.Messaging;
+using SuperBodega.API.Infrastructure.Email;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuraci�n de Kestrel para escuchar en el puerto 8080
+// Configuracion de Kestrel para escuchar en el puerto 8080
 builder.WebHost.ConfigureKestrel(options =>
 {
     options.ListenAnyIP(8080);  // Escucha en todas las interfaces en el puerto 8080
 });
 
-// Configuraci�n de vistas y Razor
+// Configuracion de vistas y Razor
 builder.Services.AddControllersWithViews();
 
 builder.Services.Configure<MvcRazorRuntimeCompilationOptions>(options =>
@@ -45,19 +49,64 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.ViewLocationFormats.Add("/Views/ProductoView/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Views/ProveedorView/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Views/Ecommerce/Productos/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Views/Ecommerce/CarritoView/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Views/VentasView/{0}" + RazorViewEngine.ViewExtension);
 });
 
-// Configuraci�n de archivos est�ticos
+// Configuracion de archivos estaticos
 builder.Services.Configure<StaticFileOptions>(options =>
 {
     options.ServeUnknownFileTypes = true;
 });
 
-// Configuraci�n de Swagger
+// Configuracion de Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Obtener la cadena de conexi�n de la base de datos
+builder.Services.AddApiVersioning(o =>
+{
+    o.DefaultApiVersion = new ApiVersion(1, 0);
+    o.AssumeDefaultVersionWhenUnspecified = true;
+    o.ReportApiVersions = true;
+});
+builder.Services.AddVersionedApiExplorer(o =>
+{
+    o.GroupNameFormat = "'v'VVV";
+    o.SubstituteApiVersionInUrl = true;
+});
+
+// Configuracion de Swagger con filtros
+builder.Services.AddSwaggerGen(opt =>
+{
+    var provider = builder.Services.BuildServiceProvider()
+                                   .GetRequiredService<IApiVersionDescriptionProvider>();
+    
+    foreach (var desc in provider.ApiVersionDescriptions)
+    {
+        opt.SwaggerDoc(desc.GroupName,
+            new Microsoft.OpenApi.Models.OpenApiInfo 
+            { 
+                Title = "SuperBodega API", 
+                Version = desc.GroupName,
+                Description = "API para el sistema SuperBodega"
+            });
+    }
+
+    // Filtrar solo controladores API (excluir MVC controllers)
+    opt.DocInclusionPredicate((docName, apiDesc) =>
+    {
+        // Incluir solo acciones que tienen ApiController o están en rutas api/*
+        var controller = apiDesc.ActionDescriptor.RouteValues["controller"];
+        var action = apiDesc.ActionDescriptor.RouteValues["action"];
+        
+        // Excluir controladores MVC específicos
+        var excludeControllers = new[] { "Dashboard", "Home" };
+        
+        return !excludeControllers.Contains(controller, StringComparer.OrdinalIgnoreCase);
+    });
+});
+
+// Obtener la cadena de conexion de la base de datos
 var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 if (string.IsNullOrEmpty(connectionString))
 {
@@ -96,11 +145,11 @@ builder.Services.AddScoped<ClienteService>();
 
 builder.Services.AddScoped<CompraProductoService>();
 builder.Services.AddScoped<VentaService>();
+builder.Services.AddScoped<VentaEstadoService>();
 builder.Services.AddScoped<CarritoService>();
+builder.Services.AddScoped<ReporteService>();
 
-
-
-// Configuraci�n de CORS
+// Configuracion de CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -110,39 +159,76 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader());
 });
 
-// Configuraci�n de HealthChecks
+// Configuracion de HealthChecks
 builder.Services.AddHealthChecks();
 
 builder.Services.AddControllers();
 
-// Construcci�n de la aplicaci�n
+
+// Validar configuración de email
+var emailConfig = builder.Configuration.GetSection("Email");
+if (string.IsNullOrEmpty(builder.Configuration["EMAIL_SMTP_PASSWORD"]))
+{
+    builder.Services.AddLogging(config => config.AddConsole());
+    var logger = builder.Services.BuildServiceProvider().GetService<ILogger<Program>>();
+    logger?.LogWarning("EMAIL_SMTP_PASSWORD no está configurado. El servicio de email no funcionará correctamente.");
+}
+
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+builder.Services.AddSingleton<IKafkaProducerService, KafkaProducerService>();
+builder.Services.AddHostedService<KafkaConsumerHostedService>();
+
+
+// Construccion de la aplicacion
 var app = builder.Build();
 
-// Inicializaci�n de la base de datos
+
+// Inicializacion de la base de datos
 using (var scope = app.Services.CreateScope())
 {
+    var db = scope.ServiceProvider.GetRequiredService<SuperBodegaContext>();
+    db.Database.Migrate();
     var dbInitializer = scope.ServiceProvider.GetRequiredService<DatabaseInitializerService>();
     await dbInitializer.InitializeAsync();
 }
 
-// Configuraci�n del entorno de desarrollo
+// Configuracion del entorno de desarrollo
 if (app.Environment.IsDevelopment())
 {
+    var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        foreach (var desc in provider.ApiVersionDescriptions)
+            c.SwaggerEndpoint($"/swagger/{desc.GroupName}/swagger.json", desc.GroupName.ToUpperInvariant());
+    });
 }
 
-// Configuraci�n del enrutamiento, archivos est�ticos, CORS y vistas Razor
+// Configuracion del enrutamiento, archivos estaticos, CORS y vistas Razor
 app.UseRouting();
 app.UseStaticFiles();
 
 app.UseCors("AllowAll");
 
+// Rutas específicas para dashboards
 app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    name: "dashboard",
+    pattern: "Dashboard/{action=Index}",
+    defaults: new { controller = "DashboardView" });
 
+// Rutas para áreas admin
+app.MapControllerRoute(
+    name: "admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
+
+// Rutas para ecommerce
+app.MapControllerRoute(
+    name: "ecommerce",
+    pattern: "Ecommerce/{controller=Home}/{action=Index}/{id?}");
+
+// Ruta por defecto
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
@@ -151,8 +237,9 @@ app.UseHttpsRedirection();
 
 // Mapeo de controladores API
 app.MapControllers();
+// app.MapDefaultControllerRoute();
 
-// Configuraci�n de HealthCheck
+// Configuracion de HealthCheck
 app.MapHealthChecks("/health", new HealthCheckOptions
 {
     ResponseWriter = async (context, report) =>
@@ -175,5 +262,10 @@ app.MapHealthChecks("/health", new HealthCheckOptions
     }
 });
 
-// Ejecutar la aplicaci�n
+app.Logger.LogInformation("Rutas:");
+foreach (var e in app.Services.GetRequiredService<EndpointDataSource>().Endpoints)
+    app.Logger.LogInformation(e.DisplayName);
+
+
+// Ejecutar la aplicacion
 app.Run();

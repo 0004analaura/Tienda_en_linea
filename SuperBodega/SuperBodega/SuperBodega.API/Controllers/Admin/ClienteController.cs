@@ -4,8 +4,13 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar clientes en el sistema
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
+[Produces("application/json")]
+[ApiConventionType(typeof(DefaultApiConventions))]
 public class ClienteController : ControllerBase
 {
     private readonly ClienteService _clienteService;

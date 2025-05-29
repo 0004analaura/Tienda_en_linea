@@ -1,0 +1,461 @@
+@model IEnumerable<SuperBodega.API.DTOs.Admin.VentaViewDTO>
+@using SuperBodega.API.Models.Admin           <!-- Enum EstadoVenta -->
+@{
+    ViewData["Title"] = "Gestión de Ventas";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Ventas</h1>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-cash-stack me-2"></i>Listado de Ventas</span>
+            <span class="badge bg-light text-dark">@Model.Count()</span>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>#</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th class="text-end">Total</th>
+                            <th class="text-center">Estado</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var v in Model)
+                    {
+                        <tr data-venta-id="@v.Id" data-estado-actual="@((int)v.Estado)">
+                            <td>@v.Id</td>
+                            <td>@v.Cliente?.Nombre @v.Cliente?.Apellido</td>
+                            <td>@v.Fecha.ToString("dd/MM/yyyy")</td>
+                            <td class="text-end">Q @v.Total?.ToString("N2")</td>
+                            <td class="text-center">
+                                <select class="form-select form-select-sm estado mx-auto"
+                                        style="width:145px" data-venta-id="@v.Id"
+                                        @(v.Estado == EstadoVenta.Entregado ? "disabled" : "")>
+                                    @foreach (EstadoVenta est in Enum.GetValues(typeof(EstadoVenta)))
+                                    {
+                                        <option value="@((int)est)" selected="@(est == v.Estado)">
+                                            @est
+                                        </option>
+                                    }
+                                </select>
+                            </td>
+                            <td class="text-center">
+                                @if (v.Estado == EstadoVenta.Entregado)
+                                {
+                                    <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2"
+                                          data-bs-toggle="tooltip" 
+                                          data-bs-placement="top" 
+                                          title="Esta venta ya ha llegado al estado final">
+                                        <i class="bi bi-check-circle-fill me-1"></i>
+                                        Finalizada
+                                    </span>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-sm btn-success btnCambiar"
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            title="Cambiar estado de la venta">
+                                        <i class="bi bi-arrow-repeat"></i> Cambiar
+                                    </button>
+                                }
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Leyenda de estados -->
+            <div class="card mt-4 border-info">
+                <div class="card-header bg-info-subtle">
+                    <h6 class="card-title mb-0 text-info">
+                        <i class="bi bi-info-circle me-2"></i>Estados de Venta
+                    </h6>
+                </div>
+                <div class="card-body py-3">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="badge bg-warning text-dark me-2 px-3 py-2">
+                                    <i class="bi bi-clock me-1"></i>Recibido
+                                </span>
+                                <small class="text-muted">→ Solo puede pasar a Despachado</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="badge bg-primary me-2 px-3 py-2">
+                                    <i class="bi bi-truck me-1"></i>Despachado
+                                </span>
+                                <small class="text-muted">→ Solo puede pasar a Entregado</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="badge bg-success me-2 px-3 py-2">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Entregado
+                                </span>
+                                <small class="text-muted">→ Estado final</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Configuración de estados y transiciones
+        const ESTADOS = {
+            RECIBIDO: 1,
+            DESPACHADO: 2,
+            ENTREGADO: 3
+        };
+
+        const NOMBRES_ESTADOS = {
+            1: 'Recibido',
+            2: 'Despachado', 
+            3: 'Entregado'
+        };
+
+        const TRANSICIONES_VALIDAS = {
+            [ESTADOS.RECIBIDO]: [ESTADOS.DESPACHADO],
+            [ESTADOS.DESPACHADO]: [ESTADOS.ENTREGADO],
+            [ESTADOS.ENTREGADO]: [] // Estado final
+        };
+
+        // Inicializar tooltips de Bootstrap
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            // Configurar selectores
+            document.querySelectorAll('select.estado').forEach(select => {
+                const tr = select.closest('tr');
+                const estadoActual = tr.dataset.estadoActual;
+                configurarOpcionesSelect(select, estadoActual);
+            });
+        });
+
+        // Función para validar si una transición es válida
+        function esTransicionValida(estadoActual, estadoNuevo) {
+            if (estadoActual === estadoNuevo) return false;
+            const estadosPermitidos = TRANSICIONES_VALIDAS[estadoActual] || [];
+            return estadosPermitidos.includes(parseInt(estadoNuevo));
+        }
+
+        // Función para obtener mensaje de error de transición
+        function obtenerMensajeError(estadoActual, estadoNuevo) {
+            const nombreActual = NOMBRES_ESTADOS[estadoActual];
+            const nombreNuevo = NOMBRES_ESTADOS[estadoNuevo];
+            
+            switch (parseInt(estadoActual)) {
+                case ESTADOS.RECIBIDO:
+                    return `Una venta en estado "${nombreActual}" solo puede pasar a "Despachado"`;
+                case ESTADOS.DESPACHADO:
+                    return `Una venta en estado "${nombreActual}" solo puede pasar a "Entregado"`;
+                case ESTADOS.ENTREGADO:
+                    return `Una venta "${nombreActual}" no puede cambiar de estado`;
+                default:
+                    return `No se puede cambiar de "${nombreActual}" a "${nombreNuevo}"`;
+            }
+        }
+
+        // Función para configurar las opciones del select según el estado actual
+        function configurarOpcionesSelect(select, estadoActual) {
+            const options = select.querySelectorAll('option');
+            const estadosPermitidos = TRANSICIONES_VALIDAS[parseInt(estadoActual)] || [];
+            
+            options.forEach(option => {
+                const valorEstado = parseInt(option.value);
+                
+                if (valorEstado === parseInt(estadoActual)) {
+                    // El estado actual siempre está habilitado y seleccionado
+                    option.disabled = false;
+                    option.selected = true;
+                } else if (estadosPermitidos.includes(valorEstado)) {
+                    // Estados a los que se puede transicionar
+                    option.disabled = false;
+                } else {
+                    // Estados no permitidos
+                    option.disabled = true;
+                }
+            });
+
+            // Si el estado es Entregado, deshabilitar todo el select
+            if (parseInt(estadoActual) === ESTADOS.ENTREGADO) {
+                select.disabled = true;
+                select.style.backgroundColor = '#f8f9fa';
+                select.style.cursor = 'not-allowed';
+            }
+        }
+
+        document.querySelectorAll('.btnCambiar').forEach(btn => {
+            btn.addEventListener('click', async e => {
+                const tr = e.target.closest('tr');
+                const id = tr.dataset.ventaId;
+                const selectEstado = tr.querySelector('select.estado');
+                const estadoNuevo = selectEstado.value;
+                const estadoActual = tr.dataset.estadoActual;
+                const button = e.target.closest('button');
+                const originalButtonText = button.innerHTML;
+                
+                // Verificación adicional de seguridad (aunque el botón no debería estar disponible)
+                if (parseInt(estadoActual) === ESTADOS.ENTREGADO) {
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Venta finalizada',
+                        html: `
+                            <div class="text-center">
+                                <p class="mb-3">Esta venta ya ha llegado al estado final y no puede ser modificada.</p>
+                                <div class="alert alert-success border-0 py-2 px-3 d-inline-block">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    <small>La venta #${id} fue entregada exitosamente</small>
+                                </div>
+                            </div>
+                        `,
+                        confirmButtonText: 'Entendido',
+                        confirmButtonColor: '#198754'
+                    });
+                    return;
+                }
+                
+                // Validar que se haya seleccionado un estado diferente
+                if (parseInt(estadoNuevo) === parseInt(estadoActual)) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Sin cambios',
+                        text: 'Debe seleccionar un estado diferente al actual',
+                        confirmButtonText: 'Entendido'
+                    });
+                    return;
+                }
+
+                // Validar que la transición sea válida
+                if (!esTransicionValida(estadoActual, estadoNuevo)) {
+                    const mensajeError = obtenerMensajeError(estadoActual, estadoNuevo);
+                    
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Transición no válida',
+                        html: `
+                            <div class="text-center">
+                                <p class="mb-3">${mensajeError}</p>
+                                <div class="alert alert-info border-0 py-2 px-3 d-inline-block">
+                                    <small><i class="bi bi-info-circle me-1"></i><strong>Orden válido:</strong> Recibido → Despachado → Entregado</small>
+                                </div>
+                            </div>
+                        `,
+                        confirmButtonText: 'Entendido',
+                        confirmButtonColor: '#dc3545'
+                    });
+                    
+                    // Restaurar el estado original del select
+                    selectEstado.value = estadoActual;
+                    return;
+                }
+
+                // Confirmar el cambio de estado
+                const nombreActual = NOMBRES_ESTADOS[estadoActual];
+                const nombreNuevo = NOMBRES_ESTADOS[estadoNuevo];
+                
+                // Mensaje especial si va a ser entregado (estado final)
+                const esFinal = parseInt(estadoNuevo) === ESTADOS.ENTREGADO;
+                const mensajeAdicional = esFinal 
+                    ? '<div class="alert alert-warning border-0 py-2 px-3 mt-2"><small><i class="bi bi-exclamation-triangle me-1"></i>Esta será la transición final. No se podrá cambiar después.</small></div>'
+                    : '';
+                
+                const result = await Swal.fire({
+                    title: '¿Cambiar estado de venta?',
+                    html: `
+                        <div class="text-center">
+                            <p class="mb-3">¿Está seguro de cambiar el estado de la venta #${id}?</p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <span class="badge bg-secondary fs-6">${nombreActual}</span>
+                                <i class="bi bi-arrow-right"></i>
+                                <span class="badge ${esFinal ? 'bg-success' : 'bg-primary'} fs-6">${nombreNuevo}</span>
+                            </div>
+                            ${mensajeAdicional}
+                        </div>
+                    `,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#198754',
+                    cancelButtonColor: '#6c757d',
+                    confirmButtonText: 'Sí, cambiar',
+                    cancelButtonText: 'Cancelar',
+                    reverseButtons: true
+                });
+
+                if (!result.isConfirmed) {
+                    // Restaurar el estado original del select
+                    selectEstado.value = estadoActual;
+                    return;
+                }
+
+                // Deshabilitar botón y mostrar estado de carga
+                button.disabled = true;
+                button.innerHTML = '<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Procesando...';
+                
+                // También deshabilitar el select para evitar cambios mientras se procesa
+                selectEstado.disabled = true;
+
+                // Mostrar modal de carga
+                Swal.fire({
+                    title: 'Actualizando estado...',
+                    html: `
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="spinner-border text-primary me-3" role="status">
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
+                            <div>
+                                <p class="mb-1">Cambiando estado de la venta #${id}</p>
+                                <small class="text-muted">De "${nombreActual}" a "${nombreNuevo}"...</small>
+                            </div>
+                        </div>
+                    `,
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                try {
+                    const resp = await fetch(`/api/v2/ventas/${id}/estado/${estadoNuevo}`, {
+                        method: 'PUT'
+                    });
+
+                    if (resp.ok) {
+                        // Mensaje especial para estado final
+                        const mensajeExito = esFinal
+                            ? `
+                                <div class="text-center">
+                                    <p class="mb-2">¡La venta #${id} ha sido marcada como entregada!</p>
+                                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                                        <span class="badge bg-secondary">${nombreActual}</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                        <span class="badge bg-success">${nombreNuevo}</span>
+                                    </div>
+                                    <div class="alert alert-success border-0 py-2 px-3 d-inline-block mb-2">
+                                        <i class="bi bi-check-circle-fill me-2"></i>
+                                        <small>Esta venta ha llegado al estado final</small>
+                                    </div>
+                                    <div class="alert alert-info border-0 py-2 px-3 d-inline-block">
+                                        <i class="bi bi-envelope-check me-2"></i>
+                                        <small>Se notificó al cliente por correo electrónico</small>
+                                    </div>
+                                </div>
+                            `
+                            : `
+                                <div class="text-center">
+                                    <p class="mb-2">El estado de la venta #${id} ha sido actualizado exitosamente</p>
+                                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                                        <span class="badge bg-secondary">${nombreActual}</span>
+                                        <i class="bi bi-arrow-right"></i>
+                                        <span class="badge bg-success">${nombreNuevo}</span>
+                                    </div>
+                                    <div class="alert alert-success border-0 py-2 px-3 d-inline-block">
+                                        <i class="bi bi-envelope-check me-2"></i>
+                                        <small>Se notificó al cliente por correo electrónico</small>
+                                    </div>
+                                </div>
+                            `;
+
+                        // Éxito - mostrar mensaje de confirmación
+                        await Swal.fire({
+                            icon: 'success',
+                            title: esFinal ? '¡Venta finalizada!' : '¡Estado actualizado!',
+                            html: mensajeExito,
+                            confirmButtonText: 'Perfecto',
+                            confirmButtonColor: '#198754',
+                            timer: esFinal ? 5000 : 3000,
+                            timerProgressBar: true,
+                            showClass: {
+                                popup: 'animate__animated animate__zoomIn animate__faster'
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__zoomOut animate__faster'
+                            }
+                        });
+                        
+                        // Recargar la página para reflejar los cambios
+                        location.reload();
+                    } else {
+                        // Error - mostrar mensaje de error
+                        const errorText = await resp.text();
+                        
+                        await Swal.fire({
+                            icon: 'error',
+                            title: 'Error al actualizar',
+                            html: `
+                                <div class="text-center">
+                                    <p class="mb-2">No se pudo cambiar el estado de la venta #${id}</p>
+                                    <div class="alert alert-danger border-0 py-2 px-3 d-inline-block">
+                                        <small><strong>Detalle:</strong> ${errorText || 'Error desconocido'}</small>
+                                    </div>
+                                </div>
+                            `,
+                            confirmButtonText: 'Intentar de nuevo',
+                            confirmButtonColor: '#dc3545'
+                        });
+
+                        // Restaurar estado del botón y select
+                        button.disabled = false;
+                        button.innerHTML = originalButtonText;
+                        selectEstado.disabled = false;
+                        
+                        // Restaurar el estado original del select
+                        selectEstado.value = estadoActual;
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    
+                    // Error de conexión - mostrar mensaje
+                    await Swal.fire({
+                        icon: 'error',
+                        title: 'Error de conexión',
+                        html: `
+                            <div class="text-center">
+                                <p class="mb-2">No se pudo conectar con el servidor</p>
+                                <div class="alert alert-warning border-0 py-2 px-3 d-inline-block">
+                                    <small>Verifique su conexión a internet e intente nuevamente</small>
+                                </div>
+                            </div>
+                        `,
+                        confirmButtonText: 'Entendido',
+                        confirmButtonColor: '#ffc107'
+                    });
+
+                    // Restaurar estado del botón y select
+                    button.disabled = false;
+                    button.innerHTML = originalButtonText;
+                    selectEstado.disabled = false;
+                    
+                    // Restaurar el estado original del select
+                    selectEstado.value = estadoActual;
+                }
+            });
+        });
+    </script>
+}

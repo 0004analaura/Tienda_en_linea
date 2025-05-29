@@ -5,6 +5,9 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar las vistas de productos comprados
+/// </summary>
 [Route("Compras/Producto")]
 public class CompraProductoViewController : Controller
 {
@@ -54,7 +57,7 @@ public class CompraProductoViewController : Controller
 
     private async Task<List<SelectListItem>> GetProveedoresSelectList()
     {
-        // Necesitarás inyectar el ProveedorService en el constructor
+        // Necesitarï¿½s inyectar el ProveedorService en el constructor
         var proveedores = await _proveedorService.GetAllProveedoresAsync();
         return proveedores.Select(p => new SelectListItem
         {

@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Reportes de Ventas";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-4">Reportes de Ventas</h1>
+
+    <!-- Selector de periodo -->
+    <form id="filtroForm" class="row g-3 mb-4">
+        <div class="col-auto">
+            <label class="col-form-label">Inicio</label>
+        </div>
+        <div class="col-auto">
+            <input type="date" id="inicio" class="form-control" />
+        </div>
+        <div class="col-auto">
+            <label class="col-form-label">Fin</label>
+        </div>
+        <div class="col-auto">
+            <input type="date" id="fin" class="form-control" />
+        </div>
+        <div class="col-auto">
+            <button type="button" id="btnFiltrar" class="btn btn-primary">Filtrar</button>
+        </div>
+    </form>
+
+    <ul class="nav nav-tabs" id="reporteTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabPeriodo">Por período</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabProducto">Por producto</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabCliente">Por cliente</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabProveedor">Por proveedor</button>
+        </li>
+    </ul>
+
+    <div class="tab-content pt-3">
+        <div class="tab-pane fade show active" id="tabPeriodo">
+            @await Html.PartialAsync("_PorPeriodo")
+        </div>
+        <div class="tab-pane fade" id="tabProducto">
+            @await Html.PartialAsync("_PorProducto")
+        </div>
+        <div class="tab-pane fade" id="tabCliente">
+            @await Html.PartialAsync("_PorCliente")
+        </div>
+        <div class="tab-pane fade" id="tabProveedor">
+            @await Html.PartialAsync("_PorProveedor")
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/js/reportes.js"></script>
+}

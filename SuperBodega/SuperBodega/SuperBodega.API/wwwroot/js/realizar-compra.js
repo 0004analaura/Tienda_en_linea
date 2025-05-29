@@ -202,31 +202,64 @@
                     }
                 });
 
-                fetch(`/api/RealizarCompra/confirmar/${clienteActual}`, {
+                //fetch(`/api/RealizarCompra/confirmar/${clienteActual}`, {
+                //    method: 'POST',
+                //    headers: {
+                //        'Content-Type': 'application/json',
+                //    },
+                //    body: JSON.stringify({
+                //        notasAdicionales: document.getElementById('notasAdicionales').value
+                //    })
+                //})
+                //    .then(response => {
+                //        if (!response.ok) {
+                //            return response.json().then(data => {
+                //                throw new Error(data.message || 'Error al procesar la compra');
+                //            });
+                //        }
+                //        return response.json();
+                //    })
+
+
+                const payload = {
+                    clienteId: parseInt(clienteActual),
+                    items: carritoActual.items.map(i => ({
+                        productoId: i.productoId,
+                        cantidad: i.cantidad
+                    })),
+                    notasAdicionales: document.getElementById('notasAdicionales').value
+                };
+                fetch('/api/v2/CarritoV/checkout', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        notasAdicionales: document.getElementById('notasAdicionales').value
-                    })
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
                 })
                     .then(response => {
-                        if (!response.ok) {
-                            return response.json().then(data => {
-                                throw new Error(data.message || 'Error al procesar la compra');
+                        if (response.status !== 202) {
+                            return response.text().then(t => {
+                                throw new Error(t || 'La API no aceptó la compra');
                             });
                         }
-                        return response.json();
+                        return 202;
                     })
-                    .then(data => {
+                    //.then(data => {
+                    //    Swal.fire({
+                    //        title: '¡Compra realizada!',
+                    //        text: 'La compra se ha procesado correctamente',
+                    //        icon: 'success',
+                    //        confirmButtonColor: '#28a745'
+                    //    }).then(() => {
+                    //        window.location.href = '/Dashboard/Productos';
+                    //    });
+                    //})
+                    .then(() => {
                         Swal.fire({
-                            title: '¡Compra realizada!',
-                            text: 'La compra se ha procesado correctamente',
+                            title: '¡Pedido recibido!',
+                            text: 'Te enviaremos un correo con el detalle en unos instantes',
                             icon: 'success',
                             confirmButtonColor: '#28a745'
                         }).then(() => {
-                            window.location.href = '/Dashboard/Productos';
+                            window.location.href = '/Cliente/Productos';
                         });
                     })
                     .catch(error => {

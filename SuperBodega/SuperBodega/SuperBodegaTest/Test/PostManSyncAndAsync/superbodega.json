@@ -1,0 +1,794 @@
+{
+    "info": {
+        "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "SuperBodega - Sync vs Async Performance Tests",
+        "description": "Colección para probar el rendimiento de operaciones síncronas vs asíncronas en SuperBodega API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Setup - Datos Iniciales",
+            "item": [
+                {
+                    "name": "Health Check",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"API está disponible\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de respuesta < 500ms\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(500);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/health",
+                            "host": ["{{base_url}}"],
+                            "path": ["health"]
+                        }
+                    }
+                },
+                {
+                    "name": "Obtener Clientes",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Clientes obtenidos exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "const responseJson = pm.response.json();",
+                                    "if (responseJson.length > 0) {",
+                                    "    pm.globals.set(\"cliente_id\", responseJson[0].id);",
+                                    "    pm.globals.set(\"cliente_nombre\", responseJson[0].nombre);",
+                                    "    console.log(\"Cliente seleccionado:\", responseJson[0].nombre);",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Cliente",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Cliente"]
+                        }
+                    }
+                },
+                {
+                    "name": "Obtener Productos",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Productos obtenidos exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "const responseJson = pm.response.json();",
+                                    "const productosConStock = responseJson.filter(p => p.stock > 0);",
+                                    "",
+                                    "if (productosConStock.length > 0) {",
+                                    "    pm.globals.set(\"producto_id_1\", productosConStock[0].id);",
+                                    "    pm.globals.set(\"producto_nombre_1\", productosConStock[0].nombre);",
+                                    "    console.log(\"Producto 1:\", productosConStock[0].nombre);",
+                                    "}",
+                                    "",
+                                    "if (productosConStock.length > 1) {",
+                                    "    pm.globals.set(\"producto_id_2\", productosConStock[1].id);",
+                                    "    pm.globals.set(\"producto_nombre_2\", productosConStock[1].nombre);",
+                                    "    console.log(\"Producto 2:\", productosConStock[1].nombre);",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Producto",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Producto"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Checkout SÍNCRONO",
+            "item": [
+                {
+                    "name": "1. Vaciar Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Carrito vaciado\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de respuesta aceptable\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/vaciar/{{cliente_id}}",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "vaciar", "{{cliente_id}}"]
+                        }
+                    }
+                },
+                {
+                    "name": "2. Agregar Producto 1 al Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Producto agregado exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de respuesta < 1s\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"clienteId\": {{cliente_id}},\n    \"productoId\": {{producto_id_1}},\n    \"cantidad\": 2\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/agregar",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "agregar"]
+                        }
+                    }
+                },
+                {
+                    "name": "3. Agregar Producto 2 al Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Producto agregado exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de respuesta < 1s\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"clienteId\": {{cliente_id}},\n    \"productoId\": {{producto_id_2}},\n    \"cantidad\": 1\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/agregar",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "agregar"]
+                        }
+                    }
+                },
+                {
+                    "name": "4. Verificar Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Carrito obtenido exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "const responseJson = pm.response.json();",
+                                    "pm.test(\"Carrito tiene items\", function () {",
+                                    "    pm.expect(responseJson.items).to.be.an('array');",
+                                    "    pm.expect(responseJson.items.length).to.be.greaterThan(0);",
+                                    "});",
+                                    "",
+                                    "console.log(`Carrito tiene ${responseJson.items.length} items, Total: Q${responseJson.total}`);",
+                                    "pm.globals.set(\"carrito_total\", responseJson.total);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/cliente/{{cliente_id}}",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "cliente", "{{cliente_id}}"]
+                        }
+                    }
+                },
+                {
+                    "name": "5. CHECKOUT SÍNCRONO",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "// Marcar tiempo de inicio",
+                                    "pm.globals.set(\"sync_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "// Calcular tiempo transcurrido",
+                                    "const startTime = pm.globals.get(\"sync_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"sync_checkout_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Checkout SÍNCRONO exitoso\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Respuesta contiene ventaId\", function () {",
+                                    "    const responseJson = pm.response.json();",
+                                    "    pm.expect(responseJson.ventaId).to.be.a('number');",
+                                    "    pm.globals.set(\"sync_venta_id\", responseJson.ventaId);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de checkout síncrono\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(10000); // < 10s",
+                                    "});",
+                                    "",
+                                    "console.log(`CHECKOUT SÍNCRONO completado en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);",
+                                    "console.log(`Venta creada: ID ${pm.globals.get(\"sync_venta_id\")}`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"notasAdicionales\": \"Prueba SÍNCRONA desde Postman - {{$timestamp}}\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/RealizarCompra/confirmar/{{cliente_id}}",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "RealizarCompra", "confirmar", "{{cliente_id}}"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Checkout ASÍNCRONO (Kafka)",
+            "item": [
+                {
+                    "name": "1. Vaciar Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Carrito vaciado\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de respuesta aceptable\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/vaciar/{{cliente_id}}",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "vaciar", "{{cliente_id}}"]
+                        }
+                    }
+                },
+                {
+                    "name": "2. Agregar Producto 1 al Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Productos agregados en paralelo\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Respuesta rápida (modo asíncrono)\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(800);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"clienteId\": {{cliente_id}},\n    \"productoId\": {{producto_id_1}},\n    \"cantidad\": 3\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/agregar",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "agregar"]
+                        }
+                    }
+                },
+                {
+                    "name": "3. Agregar Producto 2 al Carrito",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Segundo producto agregado\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"clienteId\": {{cliente_id}},\n    \"productoId\": {{producto_id_2}},\n    \"cantidad\": 2\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/Carrito/agregar",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Carrito", "agregar"]
+                        }
+                    }
+                },
+                {
+                    "name": "4. CHECKOUT ASÍNCRONO (Kafka)",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "// Marcar tiempo de inicio",
+                                    "pm.globals.set(\"async_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "// Calcular tiempo transcurrido",
+                                    "const startTime = pm.globals.get(\"async_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"async_checkout_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Checkout ASÍNCRONO aceptado\", function () {",
+                                    "    pm.response.to.have.status(202); // Accepted",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Respuesta ultra rápida (Kafka)\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(2000); // < 2s",
+                                    "});",
+                                    "",
+                                    "console.log(`CHECKOUT ASÍNCRONO enviado a Kafka en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);",
+                                    "console.log(`Mensaje enviado a cola de procesamiento`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"clienteId\": {{cliente_id}},\n    \"items\": [\n        {\n            \"productoId\": {{producto_id_1}},\n            \"cantidad\": 3\n        },\n        {\n            \"productoId\": {{producto_id_2}},\n            \"cantidad\": 2\n        }\n    ],\n    \"notasAdicionales\": \"Prueba ASÍNCRONA con Kafka desde Postman - {{$timestamp}}\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/CarritoV/checkout",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "CarritoV", "checkout"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Actualización de Estados SÍNCRONO",
+            "item": [
+                {
+                    "name": "1. Obtener Estados Permitidos",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Estados obtenidos exitosamente\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "const responseJson = pm.response.json();",
+                                    "console.log(`Estado actual: ${responseJson.estadoActual}`);",
+                                    "console.log(`Estados permitidos: ${JSON.stringify(responseJson.estadosPermitidos)}`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/ventas/{{sync_venta_id}}/estados-permitidos",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "ventas", "{{sync_venta_id}}", "estados-permitidos"]
+                        }
+                    }
+                },
+                {
+                    "name": "2. Cambiar a DESPACHADO (Sync)",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.globals.set(\"sync_update_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "const startTime = pm.globals.get(\"sync_update_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"sync_update_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Estado actualizado SÍNCRONAMENTE\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Tiempo de actualización síncrona\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(5000);",
+                                    "});",
+                                    "",
+                                    "console.log(`Estado actualizado SÍNCRONAMENTE en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/ventas/{{sync_venta_id}}/estado/2",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "ventas", "{{sync_venta_id}}", "estado", "2"]
+                        }
+                    }
+                },
+                {
+                    "name": "3. Cambiar a ENTREGADO (Sync)",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.globals.set(\"sync_final_update_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "const startTime = pm.globals.get(\"sync_final_update_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"sync_final_update_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Venta completada SÍNCRONAMENTE\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "console.log(`Venta completada SÍNCRONAMENTE en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/ventas/{{sync_venta_id}}/estado/3",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "ventas", "{{sync_venta_id}}", "estado", "3"]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Actualización Estados ASÍNCRONO",
+            "item": [
+                {
+                    "name": "1. Buscar Venta Reciente",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Ventas obtenidas\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "",
+                                    "const responseJson = pm.response.json();",
+                                    "if (responseJson.length > 0) {",
+                                    "    // Buscar una venta en estado \"Recibido\" (1)",
+                                    "    const ventaRecibida = responseJson.find(v => v.estado === 1);",
+                                    "    if (ventaRecibida) {",
+                                    "        pm.globals.set(\"async_venta_id\", ventaRecibida.id);",
+                                    "        console.log(`Venta encontrada para prueba asíncrona: ID ${ventaRecibida.id}`);",
+                                    "    } else {",
+                                    "        console.log(\"No se encontraron ventas en estado Recibido\");",
+                                    "        // Usar la venta más reciente",
+                                    "        pm.globals.set(\"async_venta_id\", responseJson[0].id);",
+                                    "    }",
+                                    "}"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/Ventas",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "Ventas"]
+                        }
+                    }
+                },
+                {
+                    "name": "2. Cambiar a DESPACHADO (ASYNC)",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.globals.set(\"async_update_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "const startTime = pm.globals.get(\"async_update_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"async_update_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Estado actualizado ASÍNCRONAMENTE\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Actualización asíncrona rápida\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(3000);",
+                                    "});",
+                                    "",
+                                    "console.log(`Estado actualizado ASÍNCRONAMENTE en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/ventas/{{async_venta_id}}/estado/2",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "ventas", "{{async_venta_id}}", "estado", "2"]
+                        }
+                    }
+                },
+                {
+                    "name": "3. Cambiar a ENTREFADO (ASYNC)",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.globals.set(\"async_update_start_time\", Date.now());"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "const startTime = pm.globals.get(\"async_update_start_time\");",
+                                    "const endTime = Date.now();",
+                                    "const totalTime = endTime - startTime;",
+                                    "pm.globals.set(\"async_update_time\", totalTime);",
+                                    "",
+                                    "pm.test(\"Estado actualizado ASÍNCRONAMENTE\", function () {",
+                                    "    pm.response.to.have.status(204);",
+                                    "});",
+                                    "",
+                                    "pm.test(\"Actualización asíncrona rápida\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(3000);",
+                                    "});",
+                                    "",
+                                    "console.log(`Estado actualizado ASÍNCRONAMENTE en ${totalTime}ms (Response: ${pm.response.responseTime}ms)`);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "url": {
+                            "raw": "{{base_url}}/api/v2/ventas/{{async_venta_id}}/estado/3",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "v2", "ventas", "{{async_venta_id}}", "estado", "3"]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    "// Script global que se ejecuta antes de cada request",
+                    "if (!pm.globals.get('base_url')) {",
+                    "    pm.globals.set('base_url', 'http://localhost:8080');",
+                    "}",
+                    "",
+                    "// Agregar timestamp para debugging",
+                    "pm.globals.set('current_timestamp', new Date().toISOString());"
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    "// Script global que se ejecuta después de cada response",
+                    "pm.test(\"Response time is acceptable\", function () {",
+                    "    pm.expect(pm.response.responseTime).to.be.below(30000); // 30s máximo",
+                    "});",
+                    "",
+                    "// Log básico de cada request",
+                    "console.log(`${pm.info.requestName}: ${pm.response.status} (${pm.response.responseTime}ms)`);"
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:8080",
+            "type": "string"
+        },
+        {
+            "key": "cliente_id",
+            "value": "1",
+            "type": "string"
+        },
+        {
+            "key": "producto_id_1",
+            "value": "1",
+            "type": "string"
+        },
+        {
+            "key": "producto_id_2",
+            "value": "2",
+            "type": "string"
+        }
+    ]
+}

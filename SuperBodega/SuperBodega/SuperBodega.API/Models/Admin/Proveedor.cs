@@ -1,5 +1,8 @@
 ﻿namespace SuperBodega.API.Models.Admin;
 
+/// <summary>
+/// Clase que representa un proveedor en la tienda.
+/// </summary>
 public class Proveedor
 {
     public int Id { get; set; }

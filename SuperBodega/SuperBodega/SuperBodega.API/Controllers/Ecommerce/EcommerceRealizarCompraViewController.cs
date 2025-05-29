@@ -3,8 +3,11 @@ using SuperBodega.API.Services.Admin;
 using SuperBodega.API.Services.Ecommerce;
 
 namespace SuperBodega.API.Controllers.Ecommerce;
-[Route("Dashboard")]
 
+/// <summary>
+/// Controlador para gestionar las vistas de la realizacion de compras del carrito en el sistema ecommerce
+/// </summary>
+[Route("Dashboard")]
 public class EcommerceRealizarCompraViewController : Controller
 {
     private readonly CarritoService _carritoService;

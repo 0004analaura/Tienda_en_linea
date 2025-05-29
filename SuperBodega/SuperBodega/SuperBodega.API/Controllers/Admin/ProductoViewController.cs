@@ -5,6 +5,9 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar las vistas de productos
+/// </summary>
 [Route("Productos")]
 public class ProductoViewController : Controller
 {

@@ -496,7 +496,10 @@ function cargarProductos() {
 
 function formatearPrecio(precio) {
     if (precio === undefined || precio === null) return '-';
-    return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'USD' }).format(precio);
+    return 'Q' + new Intl.NumberFormat('es-GT', { 
+        minimumFractionDigits: 2, 
+        maximumFractionDigits: 2 
+    }).format(precio);
 }
 
 function crearProducto(event) {

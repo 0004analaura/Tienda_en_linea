@@ -3,6 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SuperBodega.API.DTOs.Admin
 {
+    /// <summary>
+    /// Clase que representa un DTO (Data Transfer Object) para la compra de un producto.
+    /// Se utiliza para transferir datos entre la capa de presentaciÃ³n y la capa de negocio.
+    /// </summary>
     public class CompraProductoDTO
     {
         public int Id { get; set; }
@@ -22,7 +26,7 @@ namespace SuperBodega.API.DTOs.Admin
         public string NombreProveedor { get; set; }
 
         [Required(ErrorMessage = "La cantidad comprada es obligatoria.")]
-        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un número positivo.")]
+        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un nï¿½mero positivo.")]
         public int Cantidad { get; set; }
 
         [Required(ErrorMessage = "El precio unitario es obligatorio.")]
@@ -41,6 +45,10 @@ namespace SuperBodega.API.DTOs.Admin
         public decimal Total => Cantidad * PrecioUnitario;
     }
 
+    /// <summary>
+    /// Clase que representa un DTO (Data Transfer Object) para la creacion de una compra de un producto.
+    /// Se utiliza para transferir datos entre la capa de presentaciÃ³n y la capa de negocio.
+    /// </summary>
     public class CreateCompraProductoDTO
     {
         [Required(ErrorMessage = "El ID del producto es obligatorio.")]
@@ -50,7 +58,7 @@ namespace SuperBodega.API.DTOs.Admin
         public int ProveedorId { get; set; }
 
         [Required(ErrorMessage = "La cantidad comprada es obligatoria.")]
-        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un número positivo.")]
+        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un nï¿½mero positivo.")]
         public int Cantidad { get; set; }
 
         [Required(ErrorMessage = "El precio unitario es obligatorio.")]
@@ -68,6 +76,10 @@ namespace SuperBodega.API.DTOs.Admin
         public decimal Total => Cantidad * PrecioUnitario;
     }
 
+    /// <summary>
+    /// Clase que representa un DTO (Data Transfer Object) para la actualizacion de una compra de un producto.
+    /// Se utiliza para transferir datos entre la capa de presentaciÃ³n y la capa de negocio.
+    /// </summary>
     public class UpdateCompraProductoDTO
     {
         public int CompraId { get; set; }
@@ -76,7 +88,7 @@ namespace SuperBodega.API.DTOs.Admin
         public int ProductoId { get; set; }
 
         [Required(ErrorMessage = "La cantidad comprada es obligatoria.")]
-        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un número positivo.")]
+        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un nï¿½mero positivo.")]
         public int Cantidad { get; set; }
 
         [Required(ErrorMessage = "El precio unitario es obligatorio.")]

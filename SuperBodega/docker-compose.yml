@@ -1,17 +1,35 @@
 services:
+  zookeeper:
+    image: bitnami/zookeeper:3.9
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    ports: ["2181:2181"]
+    networks: [superbodega-network]
+
+  kafka:
+    image: bitnami/kafka:3.7
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    depends_on: [zookeeper]
+    ports: ["9092:9092"]
+    volumes: ["kafka_data:/bitnami/kafka"]
+    networks: [superbodega-network]
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: superbodega-sqlserver
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=${DATABASE_PASSWORD_ONE}
+      - SA_PASSWORD=${DATABASE_PASSWORD_FOUR}
       - MSSQL_PID=Developer
     ports:
       - "1433:1433"
     volumes:
       - sqlserver_data:/var/opt/mssql
     healthcheck:
-      test: [ "CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${DATABASE_PASSWORD_ONE} -Q 'SELECT 1' || exit 1" ]
+      test: [ "CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${DATABASE_PASSWORD_FOUR} -Q 'SELECT 1' || exit 1" ]
       interval: 10s
       retries: 10
       start_period: 20s
@@ -25,13 +43,20 @@ services:
       context: ./SuperBodega
       dockerfile: SuperBodega.API/Dockerfile
     container_name: superbodega-api
+    env_file:
+      - .env
     environment:
+      - KAFKA_BOOTSTRAP=kafka:9092
       - DOTNET_RUNNING_IN_CONTAINER=true
       - ASPNETCORE_ENVIRONMENT=Development
-      - DB_CONNECTION_STRING=Server=sqlserver;Database=${DATABASE_NAME_ONE};User Id=sa;Password=${DATABASE_PASSWORD_ONE};TrustServerCertificate=True;
-      - SA_PASSWORD=${DATABASE_PASSWORD_ONE}
+      - DB_CONNECTION_STRING=Server=sqlserver;Database=${DATABASE_NAME_FOUR};User Id=sa;Password=${DATABASE_PASSWORD_FOUR};TrustServerCertificate=True;
+      - SA_PASSWORD=${DATABASE_PASSWORD_FOUR}
       - ASPNETCORE_URLS=http://+:8080
       - ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+      - EMAIL_FROM=${EMAIL_FROM}
+      - EMAIL_SMTP_SERVER=${EMAIL_SMTP_SERVER}
+      - EMAIL_SMTP_PORT=${EMAIL_SMTP_PORT}
+      - EMAIL_SMTP_PASSWORD=${EMAIL_SMTP_PASSWORD}
     ports:
       - "8080:8080"
     volumes:
@@ -47,6 +72,8 @@ services:
     depends_on:
       sqlserver:
         condition: service_started
+      kafka:
+        condition: service_started
     networks:
       - superbodega-network
     restart: always
@@ -56,11 +83,20 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+  k6:
+    image: grafana/k6
+    profiles: [ "load" ] 
+    volumes:
+      - ./SuperBodega/tests/load:/scripts
+    environment:
+      - API=http://api:8080
+    networks:
+      - superbodega-network
 
 volumes:
   producto-images:
   sqlserver_data:
-    
+  kafka_data:
 
 networks:
   superbodega-network:

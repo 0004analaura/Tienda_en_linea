@@ -1,0 +1,128 @@
+@{
+    ViewData["Title"] = "Realizar Compra";
+    Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_ClientMenu" />
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0">Realizar Compra</h1>
+    </div>
+
+    <div class="alert alert-info mb-4">
+        <i class="bi bi-info-circle me-2"></i> Selecciona un cliente para realizar una compra.
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h5 class="card-title mb-0"><i class="bi bi-person me-2"></i>Seleccionar Cliente</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="clienteSelect" class="form-label">Cliente</label>
+                        <select id="clienteSelect" class="form-select">
+                            <option value="">Selecciona un cliente...</option>
+                            <!-- Los clientes se cargarán dinámicamente -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h5 class="card-title mb-0"><i class="bi bi-person-vcard me-2"></i>Información del Cliente</h5>
+                </div>
+                <div class="card-body">
+                    <div id="clienteInfo">
+                        <p class="text-muted mb-0">Seleccione un cliente para ver su información</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h5 class="card-title mb-0"><i class="bi bi-cart4 me-2"></i>Productos a Comprar</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover" id="compraTable">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="compraTableBody">
+                        <!-- Los datos se cargarán dinámicamente -->
+                        <tr>
+                            <td colspan="5" class="text-center">No hay productos seleccionados</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Información de Entrega</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="direccionEntrega" class="form-label">Dirección de Entrega</label>
+                                <input type="text" class="form-control" id="direccionEntrega" disabled>
+                                <div class="form-text">La dirección registrada del cliente será utilizada para la entrega.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notasAdicionales" class="form-label">Notas Adicionales</label>
+                                <textarea class="form-control" id="notasAdicionales" rows="3" placeholder="Instrucciones especiales para la entrega..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Resumen de la Compra</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">Total a Pagar:</span>
+                                <span id="total" class="fw-bold">$0.00</span>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button id="btnConfirmarCompra" class="btn btn-success" disabled>
+                                    <i class="bi bi-check-circle me-2"></i>Confirmar Compra
+                                </button>
+                                <a href="/Dashboard/Carrito" class="btn btn-outline-secondary">
+                                    <i class="bi bi-arrow-left me-2"></i>Volver al Carrito
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/realizar-compra.js"></script>
+}

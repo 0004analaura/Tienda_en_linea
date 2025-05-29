@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SuperBodega.API.Models.Admin
 
 {
+    /// <summary>
+    /// Clase que representa un producto comprado en una transacción de compra.
+    /// </summary>
     public class CompraProducto
     {
         public int Id { get; set; }

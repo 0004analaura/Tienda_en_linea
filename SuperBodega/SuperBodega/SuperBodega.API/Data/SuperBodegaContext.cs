@@ -64,5 +64,9 @@ namespace SuperBodega.API.Data
             }
         }
         public DbSet<SuperBodega.API.DTOs.Admin.ProductoDTO> ProductoDTO { get; set; } = default!;
+        protected override void OnModelCreating(ModelBuilder mb)
+        {
+            mb.Entity<Carrito>().ToTable("Carrito");
+        }
     }
 }

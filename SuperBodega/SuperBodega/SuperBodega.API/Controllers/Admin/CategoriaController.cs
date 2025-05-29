@@ -4,8 +4,13 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers;
 
+/// <summary>
+/// Controlador para gestionar categorias en el sistema
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
+[Produces("application/json")]
+[ApiConventionType(typeof(DefaultApiConventions))]
 public class CategoriaController : ControllerBase
 {
     private readonly CategoriaService _categoriaService;

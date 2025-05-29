@@ -1,42 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\",
+  "WorkspaceRootPath": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\controllers\\ecommerce\\productoapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\controllers\\ecommerce\\productoapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}|tests\\SuperBodega.Tests\\SuperBodega.Tests.csproj|i:\\tienda_en_linea\\superbodega\\superbodega\\tests\\superbodega.tests\\services\\ventaservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}|tests\\SuperBodega.Tests\\SuperBodega.Tests.csproj|solutionrelative:tests\\superbodega.tests\\services\\ventaservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\services\\databaseconnectioncheckservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\services\\databaseconnectioncheckservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|i:\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\services\\admin\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\services\\admin\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|i:\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\events\\ventacreadaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\events\\ventacreadaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\superbodega.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\superbodega.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\services\\databaseinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\services\\databaseinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|c:\\users\\pitap\\downloads\\proyecto\\tienda_en_linea\\superbodega\\superbodega\\superbodega.api\\superbodega.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}|SuperBodega.API\\SuperBodega.API.csproj|solutionrelative:superbodega.api\\superbodega.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}|tests\\SuperBodega.Tests\\SuperBodega.Tests.csproj|i:\\tienda_en_linea\\superbodega\\superbodega\\tests\\superbodega.tests\\fixtures\\dbfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}|tests\\SuperBodega.Tests\\SuperBodega.Tests.csproj|solutionrelative:tests\\superbodega.tests\\fixtures\\dbfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductoApiController.cs",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Controllers\\Ecommerce\\ProductoApiController.cs",
-              "RelativeDocumentMoniker": "SuperBodega.API\\Controllers\\Ecommerce\\ProductoApiController.cs",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Controllers\\Ecommerce\\ProductoApiController.cs",
-              "RelativeToolTip": "SuperBodega.API\\Controllers\\Ecommerce\\ProductoApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T06:00:58.599Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -75,101 +42,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseConnectionCheckService.cs",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\DatabaseConnectionCheckService.cs",
-              "RelativeDocumentMoniker": "SuperBodega.API\\Services\\DatabaseConnectionCheckService.cs",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\DatabaseConnectionCheckService.cs",
-              "RelativeToolTip": "SuperBodega.API\\Services\\DatabaseConnectionCheckService.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "VentaServiceTests.cs",
+              "DocumentMoniker": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\tests\\SuperBodega.Tests\\Services\\VentaServiceTests.cs",
+              "RelativeDocumentMoniker": "tests\\SuperBodega.Tests\\Services\\VentaServiceTests.cs",
+              "ToolTip": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\tests\\SuperBodega.Tests\\Services\\VentaServiceTests.cs",
+              "RelativeToolTip": "tests\\SuperBodega.Tests\\Services\\VentaServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T03:54:21.359Z",
+              "WhenOpened": "2025-05-21T01:48:36.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SuperBodega.API.csproj",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
-              "RelativeDocumentMoniker": "SuperBodega.API\\SuperBodega.API.csproj",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.csproj",
-              "RelativeToolTip": "SuperBodega.API\\SuperBodega.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T02:27:35.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Dockerfile",
-              "RelativeDocumentMoniker": "SuperBodega.API\\Dockerfile",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Dockerfile",
-              "RelativeToolTip": "SuperBodega.API\\Dockerfile",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-22T02:19:58.418Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\appsettings.json",
-              "RelativeDocumentMoniker": "SuperBodega.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\appsettings.json",
-              "RelativeToolTip": "SuperBodega.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T02:13:24.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "SuperBodega.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\appsettings.Development.json",
-              "RelativeToolTip": "SuperBodega.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T02:19:47.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SuperBodega.API.http",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.http",
-              "RelativeDocumentMoniker": "SuperBodega.API\\SuperBodega.API.http",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\SuperBodega.API.http",
-              "RelativeToolTip": "SuperBodega.API\\SuperBodega.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-22T02:13:08.309Z"
+              "DocumentIndex": 1,
+              "Title": "VentaService.cs",
+              "DocumentMoniker": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\Admin\\VentaService.cs",
+              "RelativeDocumentMoniker": "SuperBodega.API\\Services\\Admin\\VentaService.cs",
+              "ToolTip": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\Admin\\VentaService.cs",
+              "RelativeToolTip": "SuperBodega.API\\Services\\Admin\\VentaService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAGgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T01:46:01.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Program.cs",
-              "RelativeDocumentMoniker": "SuperBodega.API\\Program.cs",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Program.cs",
-              "RelativeToolTip": "SuperBodega.API\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Title": "VentaCreadaEvent.cs",
+              "DocumentMoniker": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Events\\VentaCreadaEvent.cs",
+              "RelativeDocumentMoniker": "SuperBodega.API\\Events\\VentaCreadaEvent.cs",
+              "ToolTip": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Events\\VentaCreadaEvent.cs",
+              "RelativeToolTip": "SuperBodega.API\\Events\\VentaCreadaEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:29:11.916Z",
+              "WhenOpened": "2025-05-21T01:47:05.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseInitializerService.cs",
-              "DocumentMoniker": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\DatabaseInitializerService.cs",
-              "RelativeDocumentMoniker": "SuperBodega.API\\Services\\DatabaseInitializerService.cs",
-              "ToolTip": "C:\\Users\\pitap\\Downloads\\Proyecto\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\Services\\DatabaseInitializerService.cs",
-              "RelativeToolTip": "SuperBodega.API\\Services\\DatabaseInitializerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DbFixture.cs",
+              "DocumentMoniker": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\tests\\SuperBodega.Tests\\Fixtures\\DbFixture.cs",
+              "RelativeDocumentMoniker": "tests\\SuperBodega.Tests\\Fixtures\\DbFixture.cs",
+              "ToolTip": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\tests\\SuperBodega.Tests\\Fixtures\\DbFixture.cs",
+              "RelativeToolTip": "tests\\SuperBodega.Tests\\Fixtures\\DbFixture.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T03:54:21.867Z"
+              "WhenOpened": "2025-05-21T01:43:38.9Z",
+              "EditorCaption": ""
             }
           ]
         }

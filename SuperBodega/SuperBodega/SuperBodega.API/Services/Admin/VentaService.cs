@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SuperBodega.API.Data;
 using SuperBodega.API.DTOs.Admin;
+using SuperBodega.API.Events;
+using SuperBodega.API.Infrastructure.Messaging;
 using SuperBodega.API.Models.Admin;
 using SuperBodega.API.Services.Admin;
 
@@ -13,10 +15,36 @@ namespace SuperBodega.API.Services.Admin
     public class VentaService
     {
         private readonly SuperBodegaContext _context;
-
-        public VentaService(SuperBodegaContext context)
+        private readonly IServiceProvider _sp;
+        public VentaService(SuperBodegaContext context, IServiceProvider sp)
         {
             _context = context;
+            _sp = sp;
+        }
+
+        public async Task<IEnumerable<VentaViewDTO>> GetAllDtoAsync()
+        {
+            return await _context.Ventas
+                .Include(v => v.Cliente)
+                .Select(static v => new VentaViewDTO
+                {
+                    Id = v.Id,
+                    Fecha = v.Fecha,
+                    ClienteId = v.ClienteId,
+                    Cliente = v.Cliente,
+                    Total = v.Total,
+                    Estado = v.Estado,
+                    Productos = v.Productos
+                        .Select(p => new VentaProducto
+                        {
+                            Id = p.Id,
+                            ProductoId = p.ProductoId,
+                            Cantidad = p.Cantidad,
+                            PrecioUnitario = p.PrecioUnitario
+                        })
+                        .ToList()
+                })
+                .ToListAsync();
         }
 
         // Obtener todas las ventas con sus productos
@@ -39,11 +67,28 @@ namespace SuperBodega.API.Services.Admin
             if (cliente == null)
                 throw new ArgumentException("El cliente especificado no existe.");
 
+            // Manejar fecha correctamente
+            DateTime fechaVenta;
+            if (dto.Fecha.Kind == DateTimeKind.Unspecified)
+            {
+                // Si viene sin especificar, asumimos que es hora local de Guatemala
+                fechaVenta = dto.Fecha;
+            }
+            else
+            {
+                // Convertir a zona horaria de Guatemala
+                var guatemalaZone = TimeZoneInfo.CreateCustomTimeZone("Guatemala", new TimeSpan(-6, 0, 0), "Guatemala", "GT");
+                fechaVenta = dto.Fecha.Kind == DateTimeKind.Utc 
+                    ? TimeZoneInfo.ConvertTimeFromUtc(dto.Fecha, guatemalaZone)
+                    : dto.Fecha;
+                fechaVenta = DateTime.SpecifyKind(fechaVenta, DateTimeKind.Unspecified);
+            }
+
             var venta = new Venta
             {
-                Fecha = dto.Fecha,
+                Fecha = fechaVenta,
                 ClienteId = dto.ClienteId,
-                Estado = EstadoVenta.Pendiente
+                Estado = EstadoVenta.Recibido
             };
             _context.Ventas.Add(venta);
             await _context.SaveChangesAsync();
@@ -73,6 +118,12 @@ namespace SuperBodega.API.Services.Admin
                 .SumAsync(vp => vp.Total);
             _context.Ventas.Update(venta);
             await _context.SaveChangesAsync();
+
+            await _sp.GetRequiredService<IKafkaProducerService>()
+                .PublishAsync("ventas",
+                new VentaCreadaEvent(venta.Id, venta.Fecha,
+                venta.Productos.Select(p => new VentaLineaEvent(p.ProductoId, p.Cantidad, p.PrecioUnitario ?? 0))));
+
 
             return venta;
         }
@@ -143,7 +194,7 @@ namespace SuperBodega.API.Services.Admin
             if (venta == null) return null;
 
             if (!Enum.TryParse<EstadoVenta>(dto.Estado, out var nuevoEstado))
-                throw new ArgumentException("Estado inválido");
+                throw new ArgumentException("Estado invalido");
 
             venta.Estado = nuevoEstado;
             _context.Ventas.Update(venta);

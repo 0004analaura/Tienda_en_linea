@@ -19,7 +19,7 @@
         <div class="card-header py-3">
             <div class="d-flex align-items-center">
                 <i class="bi bi-pencil-square me-2 fs-4"></i>
-                <h5 class="card-title mb-0">Editar Información del Producto</h5>
+                <h5 class="card-title mb-0">Editar Informacion del Producto</h5>
             </div>
         </div>
         <div class="card-body p-4">
@@ -51,8 +51,8 @@
 
                     <div id="detallesProducto" class="col-12 mb-4">
                         <div class="alert alert-info">
-                            <p class="mb-1 fw-bold">Información del producto seleccionado</p>
-                            <p class="text-muted mb-0 small">La información del producto no se puede modificar una vez añadido a la compra. Para cambiar el producto, elimine esta entrada y agregue un nuevo producto.</p>
+                            <p class="mb-1 fw-bold">Informacion del producto seleccionado</p>
+                            <p class="text-muted mb-0 small">La informacion del producto no se puede modificar una vez aÃ±adido a la compra. Para cambiar el producto, elimine esta entrada y agregue un nuevo producto.</p>
                         </div>
                     </div>
 
@@ -69,7 +69,7 @@
                     <div class="col-md-4 mb-4">
                         <label asp-for="PrecioUnitario" class="form-label fw-bold">Precio de Compra Unitario <span class="text-danger">*</span></label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+                            <span class="input-group-text">Q</span>
                             <input asp-for="PrecioUnitario" type="number" step="0.01" class="form-control" min="0.01" required id="precioCompraInput" />
                         </div>
                         <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
@@ -91,7 +91,7 @@
                             <span class="input-group-text"><i class="bi bi-cash-stack"></i></span>
                             <input type="text" id="totalCompraInput" class="form-control" readonly value="@((Model.Cantidad * Model.PrecioUnitario).ToString("F2"))" />
                         </div>
-                        <small class="text-muted">Total calculado (Cantidad × Precio de Compra)</small>
+                        <small class="text-muted">Total calculado (Cantidad * Precio de Compra)</small>
                     </div>
 
                     <div class="col-md-12 mb-4">

@@ -1,5 +1,8 @@
 ﻿namespace SuperBodega.API.Models.Admin;
 
+/// <summary>
+/// Clase que representa un cliente en la tienda
+/// </summary>
 public class Cliente
 {
     public int Id { get; set; }

@@ -1,6 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperBodega.API", "SuperBodega.API\SuperBodega.API.csproj", "{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperBodega.Tests", "tests\SuperBodega.Tests\SuperBodega.Tests.csproj", "{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperBodegaTest", "SuperBodegaTest\SuperBodegaTest.csproj", "{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +31,35 @@ Global
 		{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}.Release|x64.Build.0 = Release|Any CPU
 		{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{007CAB92-77F0-4EA6-B191-AA640A7CE8AB}.Release|x86.Build.0 = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|x64.Build.0 = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C3AE7D6-2E58-48C2-9F5D-0E19E5B82245}.Release|x86.Build.0 = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|x64.Build.0 = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Debug|x86.Build.0 = Debug|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|x64.ActiveCfg = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|x64.Build.0 = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D92FD48A-A915-45CE-8FBB-D22DBD6E9BDF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {229E2C24-CB7E-46D2-928E-5785D881E1C7}
 	EndGlobalSection
 EndGlobal

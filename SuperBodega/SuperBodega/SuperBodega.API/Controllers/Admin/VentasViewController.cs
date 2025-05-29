@@ -2,10 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SuperBodega.API.DTOs.Admin;
 using SuperBodega.API.Services.Admin;
-using SuperBodega.API.Models.Admin;  // Para EstadoVenta
+using SuperBodega.API.Models.Admin;
 
 namespace SuperBodega.API.Controllers.Admin
 {
+    /// <summary>
+    /// Controlador para gestionar las vistas de ventas en el sistema
+    /// </summary>
     [Route("Ventas")]
     public class VentasViewController : Controller
     {
@@ -21,7 +24,7 @@ namespace SuperBodega.API.Controllers.Admin
         [HttpGet("Index")]
         public async Task<IActionResult> Index()
         {
-            var ventas = await _ventaService.GetAllAsync();
+            var ventas = await _ventaService.GetAllDtoAsync();
             return View(ventas);
         }
 
@@ -44,9 +47,6 @@ namespace SuperBodega.API.Controllers.Admin
             return View(venta);
         }
 
-        // ----- NUEVAS ACCIONES PARA CAMBIO DE ESTADO -----
-
-        // GET: /Ventas/ChangeState/{id}
         [HttpGet("ChangeState/{id}")]
         public async Task<IActionResult> ChangeState(int id)
         {
@@ -60,7 +60,6 @@ namespace SuperBodega.API.Controllers.Admin
             return View(venta);
         }
 
-        // POST: /Ventas/ChangeState/{id}
         [HttpPost("ChangeState/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ChangeState(int id, [FromForm] UpdateEstadoVentaDTO dto)
@@ -74,5 +73,3 @@ namespace SuperBodega.API.Controllers.Admin
         }
     }
 }
-
-

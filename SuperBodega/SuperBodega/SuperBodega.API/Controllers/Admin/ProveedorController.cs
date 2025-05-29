@@ -4,9 +4,13 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar proveedores en el sistema
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
-public class ProveedorController : ControllerBase
+[Produces("application/json")]
+[ApiConventionType(typeof(DefaultApiConventions))]public class ProveedorController : ControllerBase
 {
     private readonly ProveedorService _proveedorService;
     

@@ -5,8 +5,13 @@ using System.Linq;
 
 namespace SuperBodega.API.Controllers.Ecommerce
 {
-    [ApiController]
+    /// <summary>
+    /// Controlador para gestionar productos en el sistema ecommerce
+    /// </summary>
     [Route("api/[controller]")]
+    [ApiController]
+    [Produces("application/json")]
+    [ApiConventionType(typeof(DefaultApiConventions))]
     public class ProductoApiController : ControllerBase
     {
         private readonly SuperBodegaContext _context;

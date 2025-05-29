@@ -1,0 +1,96 @@
+@model IEnumerable<SuperBodega.API.DTOs.Admin.VentaViewDTO>
+@using SuperBodega.API.Models.Admin           <!-- Enum EstadoVenta -->
+@{
+    ViewData["Title"] = "Gestión de Ventas";
+	Layout = "_Layout";
+}
+
+@section Menu {
+    <partial name="_Menu" />
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Ventas</h1>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-cash-stack me-2"></i>Listado de Ventas</span>
+            <span class="badge bg-light text-dark">@Model.Count()</span>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>#</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th class="text-end">Total</th>
+                            <th class="text-center">Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var v in Model)
+                    {
+                        <tr data-venta-id="@v.Id">
+                            <td>@v.Id</td>
+                            <td>@v.Cliente?.Nombre @v.Cliente?.Apellido</td>
+                            <td>@v.Fecha.ToString("dd/MM/yyyy")</td>
+                            <td class="text-end">@v.Total?.ToString("C")</td>
+                            <td class="text-center">
+                                <select class="form-select form-select-sm estado mx-auto"
+                                        style="width:145px">
+                                    @foreach (EstadoVenta est in Enum.GetValues(typeof(EstadoVenta)))
+                                    {
+                                        <option value="@((int)est)" selected="@(est == v.Estado)">
+                                            @est
+                                        </option>
+                                    }
+                                </select>
+                            </td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-success btnCambiar">
+                                    <i class="bi bi-arrow-repeat"></i> Cambiar
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+            <!-- Aquí puedes añadir paginación si la necesitas -->
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.querySelectorAll('.btnCambiar').forEach(btn => {
+            btn.addEventListener('click', async e => {
+                const tr      = e.target.closest('tr');
+                const id      = tr.dataset.ventaId;
+                const estado  = tr.querySelector('select.estado').value;
+
+                const resp = await fetch(`/api/v2/ventas/${id}/estado/${estado}`, {
+                    method: 'PUT'
+                });
+                if (resp.ok){
+                    await Swal.fire({
+                        icon: 'success',
+                        title: 'Estado actualizado',
+                        text: 'Se notificó al cliente por correo',
+                        timer: 1800,
+                        showConfirmButton: false
+                    });
+                    location.reload();
+                } else {
+                    const txt = await resp.text();
+                    Swal.fire('Error', txt || 'No se pudo cambiar el estado', 'error');
+                }
+            });
+        });
+    </script>
+}

@@ -1,52 +1,80 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\categorias.css",
       "PackagePath": "staticwebassets\\css\\categorias.css"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\productos.css",
       "PackagePath": "staticwebassets\\css\\productos.css"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\css\\shared.css",
       "PackagePath": "staticwebassets\\css\\shared.css"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\images\\productos\\default_product.png",
       "PackagePath": "staticwebassets\\images\\productos\\default_product.png"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\carrito.js",
+      "PackagePath": "staticwebassets\\js\\carrito.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\categorias.js",
       "PackagePath": "staticwebassets\\js\\categorias.js"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes-productos.js",
+      "PackagePath": "staticwebassets\\js\\clientes-productos.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\clientes.js",
       "PackagePath": "staticwebassets\\js\\clientes.js"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\compras-productos.js",
+      "PackagePath": "staticwebassets\\js\\compras-productos.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\dashboard.js",
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\home.js",
       "PackagePath": "staticwebassets\\js\\home.js"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos-filtrar.js",
+      "PackagePath": "staticwebassets\\js\\productos-filtrar.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos-listado.js",
+      "PackagePath": "staticwebassets\\js\\productos-listado.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\productos.js",
       "PackagePath": "staticwebassets\\js\\productos.js"
     },
     {
-      "Id": "C:\\Users\\CELESTE ORE\\Documents\\Semestre 5\\Programacion III\\PROYECTO\\Tienda_en_linea1\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\proveedores.js",
       "PackagePath": "staticwebassets\\js\\proveedores.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\realizar-compra.js",
+      "PackagePath": "staticwebassets\\js\\realizar-compra.js"
+    },
+    {
+      "Id": "I:\\Tienda_en_linea\\SuperBodega\\SuperBodega\\SuperBodega.API\\wwwroot\\js\\reportes.js",
+      "PackagePath": "staticwebassets\\js\\reportes.js"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SuperBodega.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

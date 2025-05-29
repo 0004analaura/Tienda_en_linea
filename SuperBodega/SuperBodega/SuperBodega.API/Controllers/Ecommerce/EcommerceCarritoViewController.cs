@@ -4,6 +4,9 @@ using SuperBodega.API.Services.Ecommerce;
 
 namespace SuperBodega.API.Controllers.Ecommerce;
 
+/// <summary>
+/// Controlador para gestionar las vistas del carrito de compras en el sistema ecommerce
+/// </summary>
 [Route("Dashboard")]
 public class EcommerceCarritoViewController : Controller
 {

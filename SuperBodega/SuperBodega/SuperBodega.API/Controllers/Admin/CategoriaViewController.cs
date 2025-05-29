@@ -3,6 +3,9 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar las vistas de categorias en el sistema
+/// </summary>
 [Route("Categorias")]
 public class CategoriaViewController : Controller
 {

@@ -3,6 +3,9 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar las vistas de clientes en el sistema
+/// </summary>
 [Route("Clientes")]
 public class ClienteViewController : Controller
 {

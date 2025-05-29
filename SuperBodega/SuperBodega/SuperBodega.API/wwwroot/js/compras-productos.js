@@ -2,19 +2,19 @@
  * Script para gestionar la funcionalidad de productos en compras
  */
 document.addEventListener('DOMContentLoaded', function () {
-    // Inicialización para la vista de creación de productos en compra
+    // Inicializacion para la vista de creacion de productos en compra
     const productoSelector = document.getElementById('productoSelector');
     if (productoSelector) {
         inicializarVistaCreacion();
     }
 
-    // Inicialización para la vista de edición
+    // Inicializacion para la vista de edicion
     const formEditarCompraProducto = document.getElementById('formEditarCompraProducto');
     if (formEditarCompraProducto) {
         inicializarVistaEdicion();
     }
 
-    // Inicialización para la vista de listado
+    // Inicializacion para la vista de listado
     const compraProductosTable = document.getElementById('compraProductosTable');
     if (compraProductosTable) {
         cargarCompraProductos();
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /**
- * Inicializa la vista de creación de CompraProducto
+ * Inicializa la vista de creacion de CompraProducto
  */
 function inicializarVistaCreacion() {
     const productoSelector = document.getElementById('productoSelector');
@@ -72,7 +72,7 @@ function inicializarVistaCreacion() {
     if (cantidadInput) cantidadInput.addEventListener('input', calcularTotal);
     if (precioCompraInput) precioCompraInput.addEventListener('input', calcularTotal);
 
-    // Evento para el botón guardar
+    // Evento para el boton guardar
     if (btnGuardar) {
         btnGuardar.addEventListener('click', function () {
             guardarCompraProducto();
@@ -81,7 +81,7 @@ function inicializarVistaCreacion() {
 }
 
 /**
- * Inicializa la vista de edición de CompraProducto
+ * Inicializa la vista de edicion de CompraProducto
  */
 function inicializarVistaEdicion() {
     const cantidadInput = document.getElementById('cantidadInput');
@@ -266,7 +266,7 @@ function calcularTotal() {
 }
 
 /**
- * Envía los datos para crear un nuevo producto en una compra
+ * Envia los datos para crear un nuevo producto en una compra
  */
 function guardarCompraProducto() {
     if (!validarFormulario()) {
@@ -296,7 +296,7 @@ function guardarCompraProducto() {
         fechaDeCompra: fechaDeCompra
     };
 
-    // Mostrar datos que se enviarán (solo para depuración)
+    // Mostrar datos que se enviaron (solo para depuracion)
     console.log("Enviando datos:", compraProductoData);
 
     fetch('/api/CompraProducto/Create', {
@@ -321,7 +321,7 @@ function guardarCompraProducto() {
 
             // Show success alert and wait for user confirmation before redirecting
             Swal.fire({
-                title: '¡Exito!',
+                title: 'Â¡Exito!',
                 text: 'Producto agregado a la compra correctamente',
                 icon: 'success',
                 confirmButtonText: 'Aceptar',
@@ -429,7 +429,7 @@ function actualizarCompraProducto() {
 
             // Show success alert and wait for user confirmation before redirecting
             Swal.fire({
-                title: '¡Exito!',
+                title: 'Â¡Exito!',
                 text: 'Producto actualizado correctamente',
                 icon: 'success',
                 confirmButtonText: 'Aceptar',
@@ -485,7 +485,7 @@ function eliminarCompraProducto(id) {
                     }
 
                     Swal.fire({
-                        title: '¡Eliminado!',
+                        title: 'Â¡Eliminado!',
                         text: 'Producto eliminado de la compra correctamente',
                         icon: 'success',
                         confirmButtonText: 'Aceptar'
@@ -509,7 +509,7 @@ function eliminarCompraProducto(id) {
 
 /**
  * Valida el formulario antes de enviarlo
- * @returns {boolean} - Indica si el formulario es válido
+ * @returns {boolean} - Indica si el formulario es valido
  */
 function validarFormulario() {
     const productoSelector = document.getElementById('productoSelector');
@@ -593,7 +593,7 @@ function mostrarAlerta(mensaje, tipo) {
     alertContainer.innerHTML = '';
     alertContainer.appendChild(alerta);
 
-    // Auto-eliminar después de 5 segundos
+    // Auto-eliminar despues de 5 segundos
     setTimeout(() => {
         alerta.classList.remove('show');
         setTimeout(() => {

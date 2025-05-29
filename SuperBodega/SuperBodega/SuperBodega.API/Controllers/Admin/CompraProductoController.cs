@@ -4,8 +4,13 @@ using SuperBodega.API.Services.Admin;
 
 namespace SuperBodega.API.Controllers.Admin;
 
+/// <summary>
+/// Controlador para gestionar la compra de los productos en el sistema
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
+[Produces("application/json")]
+[ApiConventionType(typeof(DefaultApiConventions))]
 public class CompraProductoController : ControllerBase
 {
     private readonly CompraProductoService _compraProductoService;

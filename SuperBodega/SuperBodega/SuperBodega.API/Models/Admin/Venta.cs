@@ -5,6 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SuperBodega.API.Models.Admin
 {
+    /// <summary>
+    /// Clase que representa una venta en la tienda.
+    /// </summary>
     public class Venta
     {
         public int Id { get; set; }

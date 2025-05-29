@@ -4,8 +4,13 @@ using SuperBodega.API.Services.Ecommerce;
 
 namespace SuperBodega.API.Controllers.Ecommerce;
 
+/// <summary>
+/// Controlador para gestionar carritos de compra en el sistema
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
+[Produces("application/json")]
+[ApiConventionType(typeof(DefaultApiConventions))]
 public class CarritoController : ControllerBase
 {
     private readonly CarritoService _carritoService;

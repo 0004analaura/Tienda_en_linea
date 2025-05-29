@@ -9,15 +9,29 @@
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0">Panel de Cliente</h1>
+        <h1 class="h3 mb-0"><i class="bi bi-person-circle me-2"></i>Panel de Cliente</h1>
+        <div>
+            <a href="/Cliente/Productos" class="btn btn-primary">
+                <i class="bi bi-cart me-1"></i>Ir a Comprar
+            </a>
+        </div>
     </div>
 </div>
 
 <div class="container mt-4">
-    <h3 class="mb-3">Todos los Productos</h3>
-    <div id="lista-productos" class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <h3 class="mb-3"><i class="bi bi-grid me-2"></i>Catálogo de Productos</h3>
+            <p class="text-muted">Explora nuestros productos disponibles y agrégalos a tu carrito.</p>
+        </div>
+    </div>
+    
+    <div id="lista-productos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <!-- Productos se insertarán aquí dinámicamente -->
     </div>
 </div>
 
-<script src="/js/clientes-productos.js"></script>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/clientes-productos.js"></script>
+}

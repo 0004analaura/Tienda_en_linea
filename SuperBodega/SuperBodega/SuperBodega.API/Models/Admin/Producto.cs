@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SuperBodega.API.Models.Admin;
 
+/// <summary>
+/// Clase que representa un producto en la tienda.
+/// </summary>
 public class Producto
 {
     [Key]
